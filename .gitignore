@@ -1,0 +1,12 @@
+.env
+.venv/
+.venv-local/
+.cache/
+__pycache__/
+runs/
+models/
+*.pyc
+.DS_Store
+.env.*
+!.env.example
+vendor/HippoRAG-main/outputs/

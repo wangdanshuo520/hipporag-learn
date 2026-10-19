@@ -1,0 +1,16 @@
+{
+  "status": "synthetic task specification only; not a real industrial benchmark",
+  "disclaimer": "All devices, codes, and actions below are fictional. Do not use on real equipment.",
+  "documents": [
+    {"id": "old-a", "text": "For fictional device A with firmware below 2.0, error X requires action ALPHA.", "model": "A", "firmware": "<2.0", "action": "ALPHA", "published": "2024-01-01"},
+    {"id": "new-a", "text": "For fictional device A with firmware 2.0 or later, error X requires action BETA.", "model": "A", "firmware": ">=2.0", "action": "BETA", "published": "2025-01-01"},
+    {"id": "new-b", "text": "For fictional device B, error X requires action GAMMA at all firmware versions.", "model": "B", "firmware": "any", "action": "GAMMA", "published": "2026-01-01"}
+  ],
+  "cases": [
+    {"id": "a-old", "observed": {"model": "A", "firmware": "1.5", "error": "X"}, "gold_action": "ALPHA", "gold_evidence": ["old-a"], "test": "newest is not always applicable"},
+    {"id": "a-new", "observed": {"model": "A", "firmware": "2.0", "error": "X"}, "gold_action": "BETA", "gold_evidence": ["new-a"], "paired_with": "a-old", "test": "firmware boundary changes action"},
+    {"id": "a-missing", "observed": {"model": "A", "error": "X"}, "gold_behavior": "ask firmware version", "test": "unknown must not be treated as true or false"},
+    {"id": "b-missing", "observed": {"model": "B", "error": "X"}, "gold_action": "GAMMA", "gold_evidence": ["new-b"], "test": "missing firmware does not justify needless clarification"},
+    {"id": "no-evidence", "observed": {"model": "C", "firmware": "1.5", "error": "Y"}, "gold_behavior": "insufficient evidence", "test": "do not ask indefinitely when corpus lacks evidence"}
+  ]
+}

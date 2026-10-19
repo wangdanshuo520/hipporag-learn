@@ -1,0 +1,127 @@
+{
+  "scope": "Official 3-document / 1-question sample; functionality only, not paper-score reproduction",
+  "backend": "local MLX Qwen2.5-1.5B-Instruct-4bit",
+  "model_snapshot": {
+    "model_id": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+    "revision": "8b403126fc14f14cfc99bb4cfa72ecbc129ea677",
+    "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--mlx-community--Qwen2.5-1.5B-Instruct-4bit/snapshots/8b403126fc14f14cfc99bb4cfa72ecbc129ea677",
+    "weights_sha256": {
+      "model.safetensors": "0979f33d1bc58afcf696d13f57977644e7b11a6f0eec3e631d8e9463d18c0717"
+    }
+  },
+  "embedding_snapshot": {
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "device": "cpu",
+    "shape": [
+      2,
+      384
+    ],
+    "finite_and_normalized": true,
+    "weight_sha256": {
+      "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+    }
+  },
+  "runs": [
+    {
+      "method": "hipporag",
+      "run_dir": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-0b38b7b43018",
+      "indexing_seconds": 9.056365874999756,
+      "qa_seconds": 3.012413459000527,
+      "retrieval_metrics": {
+        "Recall@1": 0.0,
+        "Recall@2": 0.0,
+        "Recall@5": 1.0,
+        "Recall@10": 1.0,
+        "Recall@20": 1.0,
+        "Recall@30": 1.0,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa_metrics": {
+        "ExactMatch": 0.0,
+        "F1": 0.8
+      },
+      "answer": "Thomas Sudhof.",
+      "gold_answers": [
+        "Thomas C. Sudhof"
+      ],
+      "top_document_title": "David Eagleman",
+      "graph_info": {
+        "num_phrase_nodes": 27,
+        "num_passage_nodes": 3,
+        "num_total_nodes": 30,
+        "num_extracted_triples": 24,
+        "num_triples_with_passage_node": 27,
+        "num_synonymy_triples": 2,
+        "num_total_triples": 53
+      },
+      "queries_with_graph_seeds": 1,
+      "qa_response_usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 71,
+        "total_tokens": 1160,
+        "finish_reason": "stop",
+        "response_id": "chatcmpl-ac0c62df-9b92-4f8b-8e73-0a0457d3dab1",
+        "model": "default_model",
+        "cached_tokens": 3
+      },
+      "llm_cache_request_count": 8,
+      "llm_cache_token_sum": {
+        "prompt_tokens": 6765,
+        "completion_tokens": 807,
+        "total_tokens": 7572,
+        "cached_tokens": 1247
+      }
+    },
+    {
+      "method": "standard",
+      "run_dir": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-standard-a93fcce5e512",
+      "indexing_seconds": 0.7687360420022742,
+      "qa_seconds": 0.7618124170003284,
+      "retrieval_metrics": {
+        "Recall@1": 0.0,
+        "Recall@2": 0.0,
+        "Recall@5": 1.0,
+        "Recall@10": 1.0,
+        "Recall@20": 1.0,
+        "Recall@30": 1.0,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa_metrics": {
+        "ExactMatch": 0.0,
+        "F1": 0.0
+      },
+      "answer": "Karl Deisseroth.",
+      "gold_answers": [
+        "Thomas C. Sudhof"
+      ],
+      "top_document_title": "Karl Deisseroth",
+      "graph_info": null,
+      "queries_with_graph_seeds": null,
+      "qa_response_usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 56,
+        "total_tokens": 1145,
+        "finish_reason": "stop",
+        "response_id": "chatcmpl-08aa53e5-9fb6-41fd-af59-51fa457a6df1",
+        "model": "default_model",
+        "cached_tokens": 737
+      },
+      "llm_cache_request_count": 1,
+      "llm_cache_token_sum": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 56,
+        "total_tokens": 1145,
+        "cached_tokens": 737
+      }
+    }
+  ],
+  "token_note": "Sum of distinct LLM responses saved in the run cache, including extraction and QA. Local inference incurred zero external model API calls. DeepSeek usage can differ."
+}

@@ -1,0 +1,15 @@
+{
+  "description": "Source-checked constructed diagnostic set; no expert field validation",
+  "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+  "source_publication": "520-DU001D-EN-E, April 2016",
+  "model_scope": "PowerFlex 525 only",
+  "firmware_version_scope": "No firmware-specific applicability claim",
+  "cards": 24,
+  "cases": 36,
+  "dev_cases": 24,
+  "test_cases": 12,
+  "sha256": {
+    "corpus.json": "77a7a0e9b39f7f806a338e4d567bbc508fb277bf8990ee2e8e3ab591e07f08ac",
+    "cases.json": "8f3c8b69975785934ea260ea07130448518a7b9594b5a84498098d2a31fbba8f"
+  }
+}

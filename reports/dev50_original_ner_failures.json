@@ -1,0 +1,28 @@
+[
+  {
+    "response": "[\"Roberto Clemente\", \"U.S. Marine Corps Reserve\", \"1958\", \"Barrio San Ant\u00f3n, Carolina, Puerto Rico\", \"August 18, 1934\", \"December 31, 1972\", \"Pittsburgh Pirates\", \"October 3, 1972\", \"San Juan, Puerto Rico\", \"April 17, 1955\", \"Pittsburgh Pirates\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18, 1934\", \"August 18,",
+    "metadata": {
+      "prompt_tokens": 510,
+      "completion_tokens": 2048,
+      "total_tokens": 2558,
+      "finish_reason": "length",
+      "response_id": "chatcmpl-d7ee6412-98c3-4f3c-ad35-1a3e9d0d3747",
+      "model": "default_model",
+      "cached_tokens": 160
+    },
+    "error": "OpenIE response does not contain a valid JSON object with 'named_entities'. Expected {\"named_entities\": [...]} or a bare JSON list of entity strings."
+  },
+  {
+    "response": "[[\"Presidential Succession Act\", \"Speaker of the House of Representatives\"]]",
+    "metadata": {
+      "prompt_tokens": 239,
+      "completion_tokens": 17,
+      "total_tokens": 256,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-205b1dc3-100a-420c-8c18-1aa55acd09f5",
+      "model": "default_model",
+      "cached_tokens": 160
+    },
+    "error": "OpenIE response does not contain a valid JSON object with 'named_entities'. Expected {\"named_entities\": [...]} or a bare JSON list of entity strings."
+  }
+]

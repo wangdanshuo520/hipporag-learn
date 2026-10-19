@@ -1,0 +1,14 @@
+{
+  "unique_questions": 50,
+  "documents": 227,
+  "hop_counts": {
+    "2": 22,
+    "4": 15,
+    "3": 13
+  },
+  "corpus_word_count": 19022,
+  "max_document_word_count": 294,
+  "all_supports_present": true,
+  "corpus_fields_only_title_text": true,
+  "hashes_match": true
+}

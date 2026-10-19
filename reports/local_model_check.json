@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-17T12:35:00.053485+00:00",
+  "model_id": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+  "base_url": "http://127.0.0.1:8080/v1",
+  "response_model": "default_model",
+  "answer": "OK",
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 34,
+    "total_tokens": 36,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

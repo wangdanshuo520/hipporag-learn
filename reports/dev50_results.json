@@ -1,0 +1,3424 @@
+{
+  "scope": "Fixed reduced-corpus development diagnostic; not paper-score reproduction",
+  "questions": 50,
+  "documents": 227,
+  "adapter": {
+    "version": "strict-json-v3",
+    "sha256": "5f9e470147ecec4ff5ca75938ef21e742b9ae415bc8bba3070a01c33bfbae4b7",
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 256
+  },
+  "methods": {
+    "standard": {
+      "raw_cache_reuse": null,
+      "new_responses_since_import": {
+        "requests": 50,
+        "prompt_tokens": 72552,
+        "completion_tokens": 4052,
+        "total_tokens": 76604
+      },
+      "run": "runs/musique-standard-2fa2fe6c41f1/result.json",
+      "retrieval": {
+        "Recall@1": 0.37499199999999994,
+        "Recall@2": 0.5883379999999999,
+        "Recall@5": 0.8000039999999998,
+        "Recall@10": 0.8650019999999999,
+        "Recall@20": 0.915,
+        "Recall@30": 0.946668,
+        "Recall@50": 0.9783339999999999,
+        "Recall@100": 0.99,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa": {
+        "ExactMatch": 0.06,
+        "F1": 0.17362800000000003
+      },
+      "indexing_seconds": 4.741048542004137,
+      "query_seconds_mean": 1.0100576325600559,
+      "query_seconds_median": 0.8247672500001499,
+      "query_seconds_max": 3.4964049170012004,
+      "unique_response_tokens": {
+        "requests": 50,
+        "prompt_tokens": 72552,
+        "completion_tokens": 4052,
+        "total_tokens": 76604,
+        "cached_tokens": 36855
+      },
+      "length_terminated_responses": 0
+    },
+    "hipporag": {
+      "raw_cache_reuse": {
+        "source": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/musique-hipporag-2d9569a5f35b/index/llm_cache/default_model_cache.sqlite",
+        "sha256": "c89bdfa7e89d4eead13f73ca2e5cef5766b0c170e614a8943a5965b23994e1de"
+      },
+      "new_responses_since_import": {
+        "requests": 327,
+        "prompt_tokens": 371003,
+        "completion_tokens": 42659,
+        "total_tokens": 413662
+      },
+      "run": "runs/musique-hipporag-919e8c07ccb6/result.json",
+      "retrieval": {
+        "Recall@1": 0.31166,
+        "Recall@2": 0.523334,
+        "Recall@5": 0.81167,
+        "Recall@10": 0.9000020000000001,
+        "Recall@20": 0.9300020000000001,
+        "Recall@30": 0.960002,
+        "Recall@50": 0.985,
+        "Recall@100": 0.99,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa": {
+        "ExactMatch": 0.06,
+        "F1": 0.14075199999999996
+      },
+      "indexing_seconds": 415.7288392499977,
+      "query_seconds_mean": 2.5010772258992073,
+      "query_seconds_median": 2.5558519379992504,
+      "query_seconds_max": 6.640168999998423,
+      "unique_response_tokens": {
+        "requests": 557,
+        "prompt_tokens": 449661,
+        "completion_tokens": 51987,
+        "total_tokens": 501648,
+        "cached_tokens": 311529
+      },
+      "length_terminated_responses": 4,
+      "extraction_attempts": 456,
+      "format_retries": 2,
+      "shape_normalizations": 116,
+      "graph": {
+        "num_phrase_nodes": 1303,
+        "num_passage_nodes": 227,
+        "num_total_nodes": 1530,
+        "num_extracted_triples": 1135,
+        "num_triples_with_passage_node": 1414,
+        "num_synonymy_triples": 340,
+        "num_total_triples": 2789
+      },
+      "queries_with_graph_seeds": 42,
+      "queries_without_graph_seeds": 8,
+      "documents_without_entities": 0,
+      "documents_without_triples": 0,
+      "extraction_document_count": 227
+    }
+  },
+  "paired_F1_difference": {
+    "hipporag_minus_dense": -0.032876,
+    "bootstrap_95_percentile": [
+      -0.10717399999999999,
+      0.042516
+    ],
+    "bootstrap_seed": 20261015,
+    "resamples": 5000
+  },
+  "per_question": [
+    {
+      "id": "2hop__619265_45326",
+      "question": "How many episodes are in season 5 of the series with The Bag or the Bat?",
+      "hipporag_answer": "There are no specific details given about the number of episodes in season 5 of the series containing \"The Bag or the Bat\". The passage only mentions that this is part of the tenth season of \"Ray Donovan\", but does not provide any additional information about its length or content. To answer your question accurately, more context would be needed.",
+      "dense_answer": "Not specified.",
+      "gold_answers": [
+        "12"
+      ],
+      "hipporag": {
+        "id": "2hop__619265_45326",
+        "seconds": 5.197056917000737,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__619265_45326",
+        "seconds": 0.7926585000022897,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "the bag",
+          "or",
+          "the bat"
+        ],
+        [
+          "the bag",
+          "was premiered in",
+          "june 30 2013"
+        ],
+        [
+          "list of ray donovan episodes",
+          "contains",
+          "season episodes"
+        ],
+        [
+          "list of ray donovan episodes",
+          "has title",
+          "list of ray donovan episodes"
+        ],
+        [
+          "2018 major league baseball season",
+          "starts on",
+          "march 29 2018"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__726675_508773_85832_745702",
+      "question": "Who is the child of the Italian navigator who explored the eastern coast of the continent César Gaytan was born in for the English?",
+      "hipporag_answer": "Sebastian Cabot was likely born in the Venetian Republic, which was under the rule of the Republic of Venice at the time. His father, Giovanni Caboto, was an explorer from Italy. The English expedition led by John Cabot was commissioned by Henry VII of England. Therefore, Sebastian Cabot would have been born before the English expedition and would not be related to John Cabot through his son. Instead, he would be related to John Cabot through his mother, Mattea, as she was a Venetian wife.",
+      "dense_answer": "Sebastian Cabot was likely born in the Venetian Republic, which was under the rule of the Republic of Venice at the time. His father, Giovanni Caboto, was an explorer from Italy. The English expedition led by John Cabot was commissioned by Henry VII of England. Therefore, Sebastian Cabot would have been born before the English expedition and would not be related to John Cabot through his son. Instead, he would be related to John Cabot through his mother, Mattea, as she was a Venetian wife.",
+      "gold_answers": [
+        "Sebastian Cabot"
+      ],
+      "hipporag": {
+        "id": "4hop1__726675_508773_85832_745702",
+        "seconds": 3.1424418749957113,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 0.75,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 0.75,
+          "Recall@100": 0.75,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0506
+        }
+      },
+      "dense": {
+        "id": "4hop1__726675_508773_85832_745702",
+        "seconds": 1.5361629580002045,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 0.75,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 0.75,
+          "Recall@100": 0.75,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0506
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "4hop3__524186_219173_638950_72134",
+      "question": "When did the city where Greenwood Laboratory School is located become capitol of the state where the screenwriter of The Poor Boob was born?",
+      "hipporag_answer": "Not specified in the given information.",
+      "dense_answer": "We do not have enough information to determine when the city where Greenwood Laboratory School is located became the capital of the state where the screenwriter of The Poor Boob was born. The relevant information is missing from the provided data.",
+      "gold_answers": [
+        "1839"
+      ],
+      "hipporag": {
+        "id": "4hop3__524186_219173_638950_72134",
+        "seconds": 2.73431808299938,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.75,
+          "Recall@20": 0.75,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop3__524186_219173_638950_72134",
+        "seconds": 1.2586663750043954,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 0.75,
+          "Recall@10": 0.75,
+          "Recall@20": 0.75,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "greenwood laboratory school",
+          "located on the campus of",
+          "missouri state university"
+        ],
+        [
+          "the poor boob",
+          "starring actors",
+          "bryant washburn wanda hawley richard rosson theodore roberts raymond hatton jay dwiggins"
+        ],
+        [
+          "greenwood laboratory school",
+          "affiliated with",
+          "missouri state university"
+        ],
+        [
+          "the poor boob",
+          "director",
+          "donald crisp"
+        ],
+        [
+          "the poor boob",
+          "writer",
+          "margaret mayo z wall covington gardner hunting"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__865961_159109",
+      "question": "Where is the country with ISO code ISO 3166-2:CV located?",
+      "hipporag_answer": "Cabo Verde.",
+      "dense_answer": "Cabo Verde.",
+      "gold_answers": [
+        "central Atlantic Ocean",
+        "Atlantic Ocean",
+        "Atlantic"
+      ],
+      "hipporag": {
+        "id": "2hop__865961_159109",
+        "seconds": 1.563753791997442,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__865961_159109",
+        "seconds": 0.4834512499946868,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "3hop1__105837_160713_77246",
+      "question": "what is meaning of the word that is a majority religion of the area that became India when the country origin of Mizraab was created in Arabic dictionary?",
+      "hipporag_answer": "The term 'Hindu' in these ancient records is an ethno - geographical term and did not refer to a religion.",
+      "dense_answer": "The term 'Hindu' in these ancient records is an ethno - geographical term and did not refer to a religion.",
+      "gold_answers": [
+        "the country of India",
+        "IND",
+        "IN",
+        "India",
+        "in",
+        "Republic of India"
+      ],
+      "hipporag": {
+        "id": "3hop1__105837_160713_77246",
+        "seconds": 2.6473482090004836,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.1176
+        }
+      },
+      "dense": {
+        "id": "3hop1__105837_160713_77246",
+        "seconds": 0.8028513329991256,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.3333,
+          "Recall@5": 0.6667,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.1176
+        }
+      },
+      "graph_seeds": [
+        [
+          "india",
+          "is part of",
+          "indian subcontinent"
+        ],
+        [
+          "mizraab",
+          "is a type of",
+          "rock"
+        ],
+        [
+          "india",
+          "is a country",
+          "asia"
+        ],
+        [
+          "hindu",
+          "used as",
+          "persian geographical term for people beyond indus"
+        ],
+        [
+          "hindu",
+          "name of",
+          "indus river"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__391525_49925_13759_736921",
+      "question": "Where is the district that the person who wanted to reform and address John Kodwo Amissah's religion preached a sermon on Marian devotion before his death located?",
+      "hipporag_answer": "Wittenberg (district)",
+      "dense_answer": "Wittenberg (district)",
+      "gold_answers": [
+        "Saxony-Anhalt"
+      ],
+      "hipporag": {
+        "id": "4hop1__391525_49925_13759_736921",
+        "seconds": 2.593823708004493,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop1__391525_49925_13759_736921",
+        "seconds": 0.7397401249982067,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "john kodwo amissah",
+          "served in",
+          "cape coast"
+        ],
+        [
+          "john kodwo amissah",
+          "served as",
+          "archbishop of cape coast"
+        ],
+        [
+          "john kodwo amissah",
+          "was born on",
+          "november 27 1922"
+        ]
+      ]
+    },
+    {
+      "id": "3hop2__127483_91678_10557",
+      "question": "What was the language Auctor comes from during the era of the man crowned first Holy Roman Emperor later known as?",
+      "hipporag_answer": "Carolingian minuscule.",
+      "dense_answer": "Carolingian Latin.",
+      "gold_answers": [
+        "Medieval Latin"
+      ],
+      "hipporag": {
+        "id": "3hop2__127483_91678_10557",
+        "seconds": 2.7944744159976835,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.3333,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop2__127483_91678_10557",
+        "seconds": 1.0391390830045566,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.5
+        }
+      },
+      "graph_seeds": [
+        [
+          "holy roman emperor",
+          "served as the first monarch",
+          "first monarch"
+        ],
+        [
+          "holy roman emperor",
+          "is",
+          "the last emperor of the holy roman empire"
+        ],
+        [
+          "holy roman emperor",
+          "was appointed by",
+          "see coronation of the holy roman emperor"
+        ],
+        [
+          "holy roman emperor",
+          "served as the last monarch",
+          "last monarch"
+        ],
+        [
+          "auctor",
+          "latin for",
+          "author"
+        ]
+      ]
+    },
+    {
+      "id": "3hop1__764280_834494_34053",
+      "question": "What was the wettest year of the administrative territorial entity that contains the administrative territorial entity where Drexel Heights is located?",
+      "hipporag_answer": "The wettest year for the administrative territorial entity containing Drexel Heights is not specified in the information provided. However, based on the available data, the wettest year for Pinellas County, Florida, where Drexel Heights is located, would be the last recorded year before the current one. As of my knowledge cutoff date in October 2023, there are no specific records indicating the wettest year for Pinellas County. For more accurate information, one would need to consult local climate records or historical weather databases.",
+      "dense_answer": "Pima County, Arizona. The wettest year recorded for Pima County, Arizona is 2010 with a population of 27,749 at the 2010 census.",
+      "gold_answers": [
+        "1905"
+      ],
+      "hipporag": {
+        "id": "3hop1__764280_834494_34053",
+        "seconds": 3.428452374995686,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.0,
+          "Recall@5": 0.3333,
+          "Recall@10": 0.3333,
+          "Recall@20": 0.6667,
+          "Recall@30": 0.6667,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop1__764280_834494_34053",
+        "seconds": 1.0091254169965396,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.3333,
+          "Recall@5": 0.3333,
+          "Recall@10": 0.3333,
+          "Recall@20": 0.3333,
+          "Recall@30": 0.6667,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "atlantic city",
+          "is located in",
+          "fremont county"
+        ],
+        [
+          "hughesville",
+          "has population",
+          "2 197"
+        ],
+        [
+          "pinellas county florida",
+          "in",
+          "united states"
+        ],
+        [
+          "pima county natural resources parks and recreation",
+          "manages",
+          "natural resources"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__72247_497223_15840_36014",
+      "question": "There is a video game named after the sports association that chooses where the super bowl is held. What was Nintendo's limit on games per developer per year on that game's platform?",
+      "hipporag_answer": "There was no specific limit on games per developer per year on the Super Nintendo Entertainment System platform.",
+      "dense_answer": "During the NES era, Nintendo had an exclusive control over titles released for the system. They approved every game, each third-party developer could only release up to five games per year, those games couldn't be released on another console within two years, and Nintendo was the exclusive manufacturer and supplier of NES cartridges. This practice lasted until 1991 when Acclaim began releasing games for both platforms, with most other licensees following suit over the next few years.",
+      "gold_answers": [
+        "five"
+      ],
+      "hipporag": {
+        "id": "4hop1__72247_497223_15840_36014",
+        "seconds": 3.746467417004169,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.0,
+          "Recall@5": 0.5,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop1__72247_497223_15840_36014",
+        "seconds": 1.5504980830010027,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0274
+        }
+      },
+      "graph_seeds": [
+        [
+          "nintendo",
+          "is",
+          "a brand name"
+        ],
+        [
+          "super nintendo entertainment system",
+          "was launched by",
+          "nintendo"
+        ],
+        [
+          "super nintendo entertainment system",
+          "was launched in",
+          "north america"
+        ]
+      ]
+    },
+    {
+      "id": "3hop1__843207_755530_88011",
+      "question": "Where is the Bridge of Sighs located in the place of death of Sonata pian'e forte's composer?",
+      "hipporag_answer": "Venice, northern Italy.",
+      "dense_answer": "Venice, northern Italy.",
+      "gold_answers": [
+        "passes over the Rio di Palazzo"
+      ],
+      "hipporag": {
+        "id": "3hop1__843207_755530_88011",
+        "seconds": 1.3747725830035051,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.3333,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 0.6667,
+          "Recall@30": 0.6667,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop1__843207_755530_88011",
+        "seconds": 0.4247879999966244,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "bridge of sighs",
+          "is located in",
+          "venice"
+        ],
+        [
+          "bridge of sighs",
+          "passes over",
+          "rio di palazzo"
+        ]
+      ]
+    },
+    {
+      "id": "3hop2__25177_19506_23299",
+      "question": "After the period which limited the supply of shellac; Białystok, Przemyśl were returned to what country along with the region they had been given in the Treaty of Schönbrunn?",
+      "hipporag_answer": "Austria.",
+      "dense_answer": "Białystok and Przemyśl were returned to Poland at the end of World War II. This information comes from the passage stating that \"the region around Białystok and a minor part of Galicia east of the San river around Przemyśl were returned to the Polish state.\"",
+      "gold_answers": [
+        "Polish state"
+      ],
+      "hipporag": {
+        "id": "3hop2__25177_19506_23299",
+        "seconds": 2.979879541999253,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 0.6667,
+          "Recall@30": 0.6667,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop2__25177_19506_23299",
+        "seconds": 1.3664971249963855,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 0.6667,
+          "Recall@30": 0.6667,
+          "Recall@50": 0.6667,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0976
+        }
+      },
+      "graph_seeds": [
+        [
+          "treaty of schönbrunn",
+          "was",
+          "harsh"
+        ],
+        [
+          "białystok",
+          "",
+          "region around białystok"
+        ],
+        [
+          "napoleon",
+          "is",
+          "the treaty of schönbrunn"
+        ],
+        [
+          "poland",
+          "annexed by the soviet union",
+          "territories of poland"
+        ],
+        [
+          "przemyśl",
+          "",
+          "part of galicia east of the san river"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__88372_83837",
+      "question": "Who sings home alone tonight with the singer of you can crash my party anytime?",
+      "hipporag_answer": "Luke Bryan.",
+      "dense_answer": "Luke Bryan and Karen Fairchild.",
+      "gold_answers": [
+        "Karen Fairchild"
+      ],
+      "hipporag": {
+        "id": "2hop__88372_83837",
+        "seconds": 1.617884708000929,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__88372_83837",
+        "seconds": 0.47850291700160597,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.5714
+        }
+      },
+      "graph_seeds": [
+        [
+          "crash my party",
+          "is an",
+          "album"
+        ],
+        [
+          "crash my party",
+          "by",
+          "american country music artist"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__46376_158105",
+      "question": "Which two features were played up by the highest paid person in the world?",
+      "hipporag_answer": "Bill Gates and Michael Jackson.",
+      "dense_answer": "Ease of use and enhanced support for Plug and Play (PnP).",
+      "gold_answers": [
+        "ease of use and enhanced support for Plug and Play"
+      ],
+      "hipporag": {
+        "id": "2hop__46376_158105",
+        "seconds": 2.046529166997061,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.1333
+        }
+      },
+      "dense": {
+        "id": "2hop__46376_158105",
+        "seconds": 0.6960330000001704,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.9524
+        }
+      },
+      "graph_seeds": [
+        [
+          "bill gates",
+          "was highlighted by",
+          "microsoft"
+        ],
+        [
+          "bill gates",
+          "started on",
+          "the forbes list"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__363216_787353",
+      "question": "Where is the headquarters of the 1st Combat Communication Squadron located?",
+      "hipporag_answer": "The location of the headquarters of the 1st Combat Communications Squadron is not specified in the given text.",
+      "dense_answer": "The location of the headquarters of the 1st Combat Communications Squadron cannot be determined from the given information.",
+      "gold_answers": [
+        "Ramstein-Miesenbach"
+      ],
+      "hipporag": {
+        "id": "2hop__363216_787353",
+        "seconds": 1.985207416000776,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__363216_787353",
+        "seconds": 0.8955564580028295,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "1st combat communications squadron",
+          "located at",
+          "ramstein air base"
+        ],
+        [
+          "1st combat communications squadron",
+          "part of",
+          "435th air ground operations wing"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__754682_730690",
+      "question": "What movement was Vibullia Alcia Agrippina's child a proponent for?",
+      "hipporag_answer": "There is no information provided about a movement or historical figure named Vibullia Alcia Agrippina. This could be due to insufficient data available in the given titles.",
+      "dense_answer": "There is no information provided about a movement or historical figure named Vibullia Alcia Agrippina. This could be due to insufficient data available in the given titles.",
+      "gold_answers": [
+        "Second Sophistic"
+      ],
+      "hipporag": {
+        "id": "2hop__754682_730690",
+        "seconds": 2.518943584000226,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__754682_730690",
+        "seconds": 0.9965416659979383,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "2hop__80860_510545",
+      "question": "Who is the spouse of the person who voices Jarvis in the Avengers Age of Ultron?",
+      "hipporag_answer": "There is not enough information to determine who the spouse of the person who voices Jarvis in the Avengers Age of Ultron is.",
+      "dense_answer": "The spouse of the person who voices J.A.R.V.I.S. in the Marvel Cinematic Universe films is not explicitly mentioned in the text.",
+      "gold_answers": [
+        "Jennifer Connelly"
+      ],
+      "hipporag": {
+        "id": "2hop__80860_510545",
+        "seconds": 3.3879447500003153,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__80860_510545",
+        "seconds": 1.8551284579953062,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 0.5,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "marvel comics",
+          "has antagonists such as",
+          "ultron"
+        ],
+        [
+          "marvel comics",
+          "has antagonists such as",
+          "loki"
+        ],
+        [
+          "marvel comics",
+          "has antagonists such as",
+          "thanos"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__88342_49853_128008_86588",
+      "question": "What's the longest homer in the history of the league where the team with the most titles from the event after which they give out the MLB MVP award plays?",
+      "hipporag_answer": "The longest home run mentioned is by Babe Ruth, hitting it at an estimated distance of 582 feet (177 m) in Denver's Mile High Stadium. However, this was measured after the ball stopped rolling. This record stands as the longest verifiable home run distance in professional baseball history. For the league where the team with the most titles from the event after which they give out the MLB MVP award plays, there isn't specified additional information provided about another notable home run or series.",
+      "dense_answer": "The longest verifiable home run distance mentioned in the passage is approximately 575 feet (175 m), achieved by Babe Ruth at Tiger Stadium (now Navin Field). This information suggests that the team winning the World Series immediately following the voting for the MLB MVP award has been involved in this record-breaking home run contest. However, without more specific details on when these records were set or how they compare to other teams' achievements, it's difficult to pinpoint exactly which team holds the record. The passage does not provide enough information to determine if any team since then has broken this record. Therefore, based solely on the given information, we cannot definitively state which team holds the longest home run record.",
+      "gold_answers": [
+        "582 feet (177 m)"
+      ],
+      "hipporag": {
+        "id": "4hop1__88342_49853_128008_86588",
+        "seconds": 3.9515186670032563,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.25,
+          "Recall@5": 0.5,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.1013
+        }
+      },
+      "dense": {
+        "id": "4hop1__88342_49853_128008_86588",
+        "seconds": 2.242173125006957,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0351
+        }
+      },
+      "graph_seeds": [
+        [
+          "mlb",
+          "has award",
+          "most valuable player award"
+        ],
+        [
+          "most valuable player award",
+          "takes place",
+          "before the postseason"
+        ],
+        [
+          "los angeles dodgers",
+          "have won",
+          "13 mvp awards"
+        ],
+        [
+          "boston red sox",
+          "won",
+          "8"
+        ],
+        [
+          "los angeles dodgers",
+          "have had",
+          "11 nl mvp award winners"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__524623_82341",
+      "question": "Where is Chris Meffert's birth place in the state of Florida?",
+      "hipporag_answer": "Ocala, Florida.",
+      "dense_answer": "Ocala, Florida.",
+      "gold_answers": [
+        "in Northern Florida",
+        "Northern Florida"
+      ],
+      "hipporag": {
+        "id": "2hop__524623_82341",
+        "seconds": 1.2662926249977318,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.5
+        }
+      },
+      "dense": {
+        "id": "2hop__524623_82341",
+        "seconds": 0.39248070900066523,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.5
+        }
+      },
+      "graph_seeds": [
+        [
+          "chris meffert",
+          "birthplace",
+          "ocala florida"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__335418_279684",
+      "question": "What team was Anna Benson's husband on?",
+      "hipporag_answer": "There is not enough information to determine if Anna Benson's husband was on any specific team. The passage only mentions that they were married but does not provide details about his career or teams.",
+      "dense_answer": "The Pittsburgh Pirates.",
+      "gold_answers": [
+        "Pittsburgh Pirates",
+        "Orioles",
+        "Pirates",
+        "Baltimore Orioles",
+        "New York Mets",
+        "Mets"
+      ],
+      "hipporag": {
+        "id": "2hop__335418_279684",
+        "seconds": 2.7160063330011326,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__335418_279684",
+        "seconds": 0.4238209579998511,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 1.0,
+          "F1": 1.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "anna benson",
+          "birth date",
+          "february 12 1976"
+        ],
+        [
+          "kris benson",
+          "played for",
+          "baltimore orioles"
+        ],
+        [
+          "kris benson",
+          "drafted by",
+          "pittsburgh pirates"
+        ],
+        [
+          "kris benson",
+          "played for",
+          "new york mets"
+        ],
+        [
+          "kris benson",
+          "suffered injury",
+          "tommy john surgery"
+        ]
+      ]
+    },
+    {
+      "id": "4hop2__103790_14670_8987_8529",
+      "question": "A country's military branch, the equivalent of which in the US contains the Air Defense Artillery, was unprepared for the invasion of Ivo Werner's country. When was the word \"Slavs\" used in the national anthem of the unprepared country?",
+      "hipporag_answer": "During World War II, the term \"Slavs\" was used in the national anthems of Slovakia, Yugoslavia, and the Federal Republic of Yugoslavia. Specifically, it appears in the Slovak Republic from 1939 to 1945, in Yugoslavia from 1943 to 1992, and in the Federal Republic of Yugoslavia from 1992 to 2003. The exact dates are not provided in the text but can be inferred based on the context.",
+      "dense_answer": "Between 1939 and 1945.",
+      "gold_answers": [
+        "1943–1992"
+      ],
+      "hipporag": {
+        "id": "4hop2__103790_14670_8987_8529",
+        "seconds": 3.6283828750019893,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop2__103790_14670_8987_8529",
+        "seconds": 1.1297971250023693,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "slavs",
+          "used in",
+          "national anthem of yugoslavia"
+        ],
+        [
+          "slavs",
+          "used in",
+          "national anthem of the federal republic of yugoslavia"
+        ],
+        [
+          "slavs",
+          "used in",
+          "national anthem of the slovak republic"
+        ],
+        [
+          "slavs",
+          "used in",
+          "national anthem of serbia and montenegro"
+        ],
+        [
+          "ivo werner",
+          "is from",
+          "czechoslovakia"
+        ]
+      ]
+    },
+    {
+      "id": "3hop1__228_237521_291682",
+      "question": "Who is the wife of the man who produced the documentary of the pop star who influenced Beyonce?",
+      "hipporag_answer": "There is no information about the spouse of the producer of the documentary on Michael Jackson.",
+      "dense_answer": "The exact spouse of the producer of the documentary on Michael Jackson is not specified in the provided text. More information would be required to determine if they are married or have any other familial connection.",
+      "gold_answers": [
+        "Liza Minnelli"
+      ],
+      "hipporag": {
+        "id": "3hop1__228_237521_291682",
+        "seconds": 2.9080755839968333,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.0,
+          "Recall@5": 0.6667,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop1__228_237521_291682",
+        "seconds": 2.3088520419987617,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "beyoncé",
+          "is influenced by",
+          "michael jackson"
+        ],
+        [
+          "jay z",
+          "was inspired by",
+          "three different relationships"
+        ],
+        [
+          "beyoncé",
+          "inspired to perform as a result of",
+          "michael jackson s performance"
+        ],
+        [
+          "beyoncé",
+          "first solo album released",
+          "june 24 2003"
+        ],
+        [
+          "beyoncé",
+          "first solo recording released",
+          "october 2002"
+        ]
+      ]
+    },
+    {
+      "id": "3hop2__89854_90327_76291",
+      "question": "When did the party that hold the majority in the House of Reps take control of the branch that approves members of the American cabinet?",
+      "hipporag_answer": "The Republican Party took control of the U.S. House of Representatives in January 2015. This was during Barack Obama's presidency, which ended on January 20, 2017. Therefore, the Republican Party controlled the House of Representatives from January 3, 2015, until January 3, 2017.",
+      "dense_answer": "The exact date when the Republican Party took control of the Senate is not specified in the given text.",
+      "gold_answers": [
+        "January 2015"
+      ],
+      "hipporag": {
+        "id": "3hop2__89854_90327_76291",
+        "seconds": 2.697816707994207,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.3333,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0976
+        }
+      },
+      "dense": {
+        "id": "3hop2__89854_90327_76291",
+        "seconds": 0.8466831670011743,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "united states congress",
+          "gives republicans control",
+          "the senate"
+        ],
+        [
+          "united states congress",
+          "is part of",
+          "legislative branch"
+        ],
+        [
+          "majority leader",
+          "is",
+          "opposition party"
+        ],
+        [
+          "speaker of the house",
+          "usually becomes",
+          "top choice"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__821197_368148",
+      "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+      "hipporag_answer": "Hughesville, Maryland.",
+      "dense_answer": "Hughesville, Maryland.",
+      "gold_answers": [
+        "Charles County",
+        "Charles County, Maryland"
+      ],
+      "hipporag": {
+        "id": "2hop__821197_368148",
+        "seconds": 1.6601088339957641,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.4
+        }
+      },
+      "dense": {
+        "id": "2hop__821197_368148",
+        "seconds": 0.6730658750020666,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.4
+        }
+      },
+      "graph_seeds": [
+        [
+          "smeco",
+          "serves customers in",
+          "prince george s county"
+        ],
+        [
+          "smeco",
+          "serves customers in",
+          "charles county"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__76402_653666",
+      "question": "Who is the mother of the founder of Mormonism?",
+      "hipporag_answer": "Lucy Mack Smith.",
+      "dense_answer": "Lucy Mack Smith.",
+      "gold_answers": [
+        "Lucy Mack Smith"
+      ],
+      "hipporag": {
+        "id": "2hop__76402_653666",
+        "seconds": 2.5927602919982746,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 1.0,
+          "F1": 1.0
+        }
+      },
+      "dense": {
+        "id": "2hop__76402_653666",
+        "seconds": 0.5486709160031751,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 1.0,
+          "F1": 1.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "history of joseph smith by his mother",
+          "is about",
+          "joseph smith"
+        ],
+        [
+          "willard mitt romney",
+          "is a member of",
+          "lds church"
+        ],
+        [
+          "willard mitt romney",
+          "has mother",
+          "lenore romney"
+        ],
+        [
+          "joseph smith",
+          "founded the movement",
+          "latter day saint movement"
+        ],
+        [
+          "history of joseph smith by his mother",
+          "was originally titled",
+          "biographical sketches of joseph smith the prophet"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__88342_75218_128008_80286",
+      "question": "who has had the most hits in the league that includes the team that has played the most games of the type played just before the league MVP is awarded?",
+      "hipporag_answer": "The Los Angeles Dodgers have played the most games prior to the league MVP award being announced. This is because they won six World Series titles, making them the most successful team in terms of World Series appearances.",
+      "dense_answer": "Pete Rose holds this distinction as he has accumulated 4,256 career hits, surpassing Ty Cobb's record of 4,000 career hits. Rose was part of the New York/Newark Dodgers during the period when the MVP award was not yet established but the team still played multiple series leading up to the World Series.",
+      "gold_answers": [
+        "Pete Rose"
+      ],
+      "hipporag": {
+        "id": "4hop1__88342_75218_128008_80286",
+        "seconds": 2.832105875000707,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.25,
+          "Recall@5": 0.5,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop1__88342_75218_128008_80286",
+        "seconds": 1.23435312500078,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0816
+        }
+      },
+      "graph_seeds": [
+        [
+          "mlb",
+          "has award",
+          "most valuable player award"
+        ],
+        [
+          "reggie jackson",
+          "played for",
+          "houston astros"
+        ],
+        [
+          "los angeles dodgers",
+          "have had",
+          "11 nl mvp award winners"
+        ],
+        [
+          "most valuable player award",
+          "takes place",
+          "before the postseason"
+        ],
+        [
+          "los angeles dodgers",
+          "have won",
+          "13 mvp awards"
+        ]
+      ]
+    },
+    {
+      "id": "3hop1__302383_503371_21711",
+      "question": "When was the Palau de la Generalitat constructed in the city where Martin from the region where Codo is located died?",
+      "hipporag_answer": "The Palau de la Generalitat was completed in 1883 for the kings of Aragon, which includes Barcelona. Therefore, it was constructed after Martin's death but before the end of the reign of Martin I, who ruled until 1410.",
+      "dense_answer": "Martin of Aragon died on May 31, 1410. The Palau de la Generalitat in Barcelona was completed between 1883 and 1908. Therefore, it was not finished by the time Martin died. However, if we consider the completion date as a reference point, the Palau de la Generalitat would have been under construction at the time of Martin's death.",
+      "gold_answers": [
+        "built in the 15th century",
+        "15th century"
+      ],
+      "hipporag": {
+        "id": "3hop1__302383_503371_21711",
+        "seconds": 2.436940166000568,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0526
+        }
+      },
+      "dense": {
+        "id": "3hop1__302383_503371_21711",
+        "seconds": 1.3646520409965888,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0357
+        }
+      },
+      "graph_seeds": [
+        [
+          "martin of aragon",
+          "died on",
+          "31 may 1410"
+        ],
+        [
+          "martin of aragon",
+          "was born on",
+          "29 july 1356"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__69_59409",
+      "question": "Who was the artist who is associated with Beyonce's premiere solo recording talking about in the song \"Cry\"?",
+      "hipporag_answer": "Jay Z.",
+      "dense_answer": "Michael Jackson.",
+      "gold_answers": [
+        "three different relationships he had in the past"
+      ],
+      "hipporag": {
+        "id": "2hop__69_59409",
+        "seconds": 2.38446875000227,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__69_59409",
+        "seconds": 0.5028372919987305,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "beyoncé",
+          "first solo recording released",
+          "october 2002"
+        ],
+        [
+          "beyoncé",
+          "first solo album debuted",
+          "billboard 200"
+        ],
+        [
+          "beyoncé",
+          "first solo album lead single reached number one",
+          "crazy in love"
+        ]
+      ]
+    },
+    {
+      "id": "3hop1__390673_228453_10972",
+      "question": "When did the headquarters city of Kentucky Tavern's manufacturer elect its first black mayor?",
+      "hipporag_answer": "The information provided does not mention when the headquarters city of Kentucky Tavern's manufacturer elected its first black mayor.",
+      "dense_answer": "Not specified.",
+      "gold_answers": [
+        "1970s"
+      ],
+      "hipporag": {
+        "id": "3hop1__390673_228453_10972",
+        "seconds": 2.6179031249994296,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop1__390673_228453_10972",
+        "seconds": 0.5272255839954596,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "kentucky tavern",
+          "launched in",
+          "1995"
+        ],
+        [
+          "kentucky tavern",
+          "produced by",
+          "sazerac company"
+        ],
+        [
+          "kentucky tavern",
+          "acquired from",
+          "united distillers"
+        ],
+        [
+          "kentucky tavern",
+          "located at",
+          "barton distillery"
+        ],
+        [
+          "kentucky tavern",
+          "in",
+          "bardstown kentucky"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__238499_431914",
+      "question": "What administrative territorial entity includes the arrondissement that contains the Digne Cathedral?",
+      "hipporag_answer": "The arrondissement of Digne-les-Bains includes the Digne Cathedral.",
+      "dense_answer": "The arrondissement of Digne-les-Bains is an arrondissement of France in the Alpes-de-Haute-Provence department in the Provence-Alpes-Côte d'Azur region. Therefore, the arrondissement of Digne-les-Bains includes the Digne Cathedral as part of its territory.",
+      "gold_answers": [
+        "Alpes-de-Haute-Provence"
+      ],
+      "hipporag": {
+        "id": "2hop__238499_431914",
+        "seconds": 1.5544594999955734,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__238499_431914",
+        "seconds": 1.0906631250036298,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0741
+        }
+      },
+      "graph_seeds": [
+        [
+          "digne cathedral",
+          "is a",
+          "roman catholic church"
+        ],
+        [
+          "arrondissement of digne les bains",
+          "is located in",
+          "france"
+        ]
+      ]
+    },
+    {
+      "id": "3hop2__87184_36497_76291",
+      "question": "When did the party that controls the House of Representatives right now, take control of the political body that the President calls on to support his USAF appointments?",
+      "hipporag_answer": "January 3, 2015, to January 3, 2017.",
+      "dense_answer": "As of the current information available (as of my last update), the Republican Party has taken control of the majority in the U.S. House of Representatives. Therefore, if the President were to call for an appointment to the Department of the Air Force, they would be making such appointments under the authority of the Republican-controlled House of Representatives.",
+      "gold_answers": [
+        "January 2015"
+      ],
+      "hipporag": {
+        "id": "3hop2__87184_36497_76291",
+        "seconds": 3.3232042089948663,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.3333,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.4444
+        }
+      },
+      "dense": {
+        "id": "3hop2__87184_36497_76291",
+        "seconds": 1.524956208995718,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "united states congress",
+          "has president",
+          "barack obama"
+        ],
+        [
+          "united states congress",
+          "gives republicans control",
+          "the senate"
+        ],
+        [
+          "united states congress",
+          "has president",
+          "barack obama"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__5658_25002",
+      "question": "How long did the pact last between Kravchuk and the person who signed the decree suspending the Communist Party of the Russian SFSR?",
+      "hipporag_answer": "The information provided does not specify how long the relationship lasted between Kravchuk and this person. It only mentions that on November 6, Yeltsin banned the Communist Parties of the USSR and the RSFSR from Russia's territory. This suggests that they may have had some form of agreement or interaction but no specific time frame for their relationship is given. Without additional context, it cannot be determined how long the relationship lasted beyond the moment when Yeltsin made the ban effective.",
+      "dense_answer": "The information provided does not specify how long the suspension lasted or any specific details about the relationship's duration. It only mentions that Yeltsin signed a decree suspending all activity by the Communist Party of the Russian SFSR in the territory of Russia. Without more context, we cannot determine the exact length of this period.",
+      "gold_answers": [
+        "10-year"
+      ],
+      "hipporag": {
+        "id": "2hop__5658_25002",
+        "seconds": 4.114913958001125,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__5658_25002",
+        "seconds": 1.274937709000369,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "russian soviet federative socialist republic",
+          "suspended activities of",
+          "communist party of the russian sfsr"
+        ],
+        [
+          "november 18 1990",
+          "enacted",
+          "ussr dissolution"
+        ],
+        [
+          "molotov ribbentrop pact",
+          "suspended anti nazi anti fascist propaganda by",
+          "soviet comintern"
+        ],
+        [
+          "molotov ribbentrop pact",
+          "was announced by",
+          "communists"
+        ],
+        [
+          "molotov ribbentrop pact",
+          "denied signing by",
+          "west communists"
+        ]
+      ]
+    },
+    {
+      "id": "4hop2__161602_474028_88460_20988",
+      "question": "For what major conflict is the country on the natural boundary between the country that hosted the tournament and the country where A Don is from known?",
+      "hipporag_answer": "Ethnic strife.",
+      "dense_answer": "The conflict referred to is the Indochinese War, also known as the First Indochina War, which took place primarily in Vietnam, Cambodia, and Laos during the mid-20th century. This war was fought between North Vietnam, supported by the Soviet Union and China, against South Vietnam, supported by the United States, France, and other Western powers.",
+      "gold_answers": [
+        "one of the world's longest-running ongoing civil wars."
+      ],
+      "hipporag": {
+        "id": "4hop2__161602_474028_88460_20988",
+        "seconds": 1.628045875004318,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop2__161602_474028_88460_20988",
+        "seconds": 1.3275435420000576,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 0.75,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "myanmar",
+          "shares borders with",
+          "thailand"
+        ],
+        [
+          "myanmar",
+          "shares borders with",
+          "india"
+        ],
+        [
+          "myanmar",
+          "shares borders with",
+          "laos"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__130480_53706_795904_580996",
+      "question": "What shares a border with the city where someone worked who went to the state where Atwell Mill Grove is located during the gold rush?",
+      "hipporag_answer": "Cabarrus County and Champaign County.",
+      "dense_answer": "** No specific neighboring town sharing a border with Gold Hill is mentioned directly from the given information. However, based on the context provided about Gold Hill being in Rowan County, NC, it suggests proximity to smaller settlements but no direct neighbor sharing a border as described.",
+      "gold_answers": [
+        "Rio Linda"
+      ],
+      "hipporag": {
+        "id": "4hop1__130480_53706_795904_580996",
+        "seconds": 1.6614829159952933,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.0,
+          "Recall@5": 0.25,
+          "Recall@10": 0.5,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 0.75,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop1__130480_53706_795904_580996",
+        "seconds": 2.7982477090044995,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.25,
+          "Recall@10": 0.5,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 0.75,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "gold hill",
+          "is located in",
+          "north carolina"
+        ],
+        [
+          "gold hill",
+          "is close to",
+          "cabarrus county"
+        ]
+      ]
+    },
+    {
+      "id": "3hop2__668732_223623_162182",
+      "question": "In what region of the country where An Phu is located is John Phan's birthplace?",
+      "hipporag_answer": "The information provided does not include details on John Phan's birthplace.",
+      "dense_answer": "The information provided does not include details on John Phan's birthplace.",
+      "gold_answers": [
+        "South Central Coast"
+      ],
+      "hipporag": {
+        "id": "3hop2__668732_223623_162182",
+        "seconds": 1.7383658750040922,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "3hop2__668732_223623_162182",
+        "seconds": 0.6993965419969754,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 0.6667,
+          "Recall@10": 0.6667,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "3hop1__672543_503371_21711",
+      "question": "When was the Palau de la Generalitat built in the place of death of Martin, of the region containing Piedratajada?",
+      "hipporag_answer": "The Palau de la Generalitat was built in the city of Badalona, which is located in the province of Zaragoza, Aragon, Spain. Therefore, the Palau de la Generalitat was constructed in the municipality of Piedratajada. However, it's important to note that Piedratajada is not explicitly mentioned as the location where Martin died; instead, it's associated with the nearby municipality of Codo. This information suggests that the Palau de la Generalitat may have been built at a different time or under a different name.",
+      "dense_answer": "The Palau de la Generalitat in Barcelona was completed between 1883 and 1887. This information can be found in various sources related to the history of the building.",
+      "gold_answers": [
+        "built in the 15th century",
+        "15th century"
+      ],
+      "hipporag": {
+        "id": "3hop1__672543_503371_21711",
+        "seconds": 3.1232855829948676,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.3333,
+          "Recall@5": 0.6667,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0519
+        }
+      },
+      "dense": {
+        "id": "3hop1__672543_503371_21711",
+        "seconds": 0.9230064160001348,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.069
+        }
+      },
+      "graph_seeds": [
+        [
+          "piedratajada",
+          "in",
+          "aragon"
+        ],
+        [
+          "piedratajada",
+          "in",
+          "spain"
+        ],
+        [
+          "piedratajada",
+          "in",
+          "aragon"
+        ]
+      ]
+    },
+    {
+      "id": "4hop3__862_846_326964_7713",
+      "question": "How long was the city where the Yongle emperor greeted the person the Ming court thought the representatives were sent by the capitol of Yaxing Coach's headquarters location?",
+      "hipporag_answer": "The Ming court believed Deshin Shekpa had died in 1415, which means they cut off relations with him in 1446. Therefore, the period from April 10, 1407 to March 10, 1446 is approximately 39 years.",
+      "dense_answer": "One year.",
+      "gold_answers": [
+        "about 400 years"
+      ],
+      "hipporag": {
+        "id": "4hop3__862_846_326964_7713",
+        "seconds": 3.246277416998055,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0556
+        }
+      },
+      "dense": {
+        "id": "4hop3__862_846_326964_7713",
+        "seconds": 0.5156890840007691,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "yongle emperor",
+          "was usurped by",
+          "jianwen emperor"
+        ],
+        [
+          "yongle emperor",
+          "invited",
+          "deshin shekpa"
+        ],
+        [
+          "the ming court",
+          "believed",
+          "karmapa"
+        ],
+        [
+          "deshin shekpa",
+          "by",
+          "yongle emperor"
+        ],
+        [
+          "yongle emperor",
+          "saw karmapa as",
+          "place of honor"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__159737_27110",
+      "question": "During what time span were there findings of habitation in India and the country that withdrew its forces in accordance with the UN resolution of August 1948?",
+      "hipporag_answer": "There were findings of habitation in India during the Mesolithic period, which began around 12,000 years ago, up to the time when negotiations for the Indo-US civil nuclear agreement took place, which was around August 13, 1948.",
+      "dense_answer": "The findings of habitation were recorded in India during the years 1946 to 1948, coinciding with the Indo-Pakistani War of 1947–1948. The United Nations resolution on August 1948 did not directly impact the specific dates of habitation found in India; however, the Partition of India began shortly thereafter.",
+      "gold_answers": [
+        "7000–9000 BCE"
+      ],
+      "hipporag": {
+        "id": "2hop__159737_27110",
+        "seconds": 6.640168999998423,
+        "retrieval": {
+          "Recall@1": 0.0,
+          "Recall@2": 0.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__159737_27110",
+        "seconds": 3.4964049170012004,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "partition of india",
+          "was started on",
+          "3 june 1947"
+        ],
+        [
+          "partition of india",
+          "by",
+          "mountbatten"
+        ],
+        [
+          "india",
+          "approached",
+          "iaea"
+        ],
+        [
+          "partition of india",
+          "formed out of",
+          "british india"
+        ],
+        [
+          "partition of india",
+          "is",
+          "a partition plan"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__473563_309800_355213_203322",
+      "question": "Which county shares border with the county having the birth city of the director of Let the Good Times Roll?",
+      "hipporag_answer": "Charles County, Maryland.",
+      "dense_answer": "Charles County, Maryland.",
+      "gold_answers": [
+        "Cabarrus County"
+      ],
+      "hipporag": {
+        "id": "4hop1__473563_309800_355213_203322",
+        "seconds": 1.702458874999138,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 0.75,
+          "Recall@100": 0.75,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.4
+        }
+      },
+      "dense": {
+        "id": "4hop1__473563_309800_355213_203322",
+        "seconds": 0.6474542089999886,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 0.75,
+          "Recall@100": 0.75,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.4
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "2hop__463353_66723",
+      "question": "Who was the first black student admitted to the school that owns Swayze Field?",
+      "hipporag_answer": "Oxford University.",
+      "dense_answer": "Oxford University.",
+      "gold_answers": [
+        "James Howard Meredith",
+        "James Meredith"
+      ],
+      "hipporag": {
+        "id": "2hop__463353_66723",
+        "seconds": 1.452789084003598,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__463353_66723",
+        "seconds": 0.6352702500007581,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "4hop1__46196_497223_15840_36002",
+      "question": "What were the Genesis's advantages over the platform with a three letter abbreviation, that had a video game named after the league in charge of the Super Bowl halftime show?",
+      "hipporag_answer": "The Super Nintendo Entertainment System (SNES) was designed to offer superior graphics and audio capabilities compared to the earlier Nintendo Entertainment System (NES). This allowed developers to create games with higher quality visuals and sounds, making the SNES a significant upgrade from the original NES. Additionally, the SNES launched in North America during 1989, just as the Super Bowl XXVII halftime show featuring Michael Jackson took place. This timing suggests that the SNES offered new opportunities for visual spectacle in games, though specific details about this aspect are not provided in the given text.",
+      "dense_answer": "The Nintendo Entertainment System (NES) offered improved graphics and sound compared to its predecessor, the Family Computer (FC), making it more competitive against other platforms like the Genesis.",
+      "gold_answers": [
+        "built on 16-bit architectures and offered improved graphics and sound",
+        "16-bit",
+        "16-bit architecture"
+      ],
+      "hipporag": {
+        "id": "4hop1__46196_497223_15840_36002",
+        "seconds": 3.0014015839988133,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0842
+        }
+      },
+      "dense": {
+        "id": "4hop1__46196_497223_15840_36002",
+        "seconds": 1.1209787080006208,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.2857
+        }
+      },
+      "graph_seeds": [
+        [
+          "super nintendo entertainment system",
+          "is",
+          "a video game console"
+        ],
+        [
+          "nfl",
+          "publisher",
+          "ljn"
+        ]
+      ]
+    },
+    {
+      "id": "3hop1__398232_326948_59893",
+      "question": "When were the monuments built in the Mother-in-Law performer's birthplace?",
+      "hipporag_answer": "The monument honoring Ernie K-Doe was dedicated in 1884.",
+      "dense_answer": "Not specified in the available information.",
+      "gold_answers": [
+        "1884,"
+      ],
+      "hipporag": {
+        "id": "3hop1__398232_326948_59893",
+        "seconds": 1.228003832999093,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.6667,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.2222
+        }
+      },
+      "dense": {
+        "id": "3hop1__398232_326948_59893",
+        "seconds": 0.6242919590004021,
+        "retrieval": {
+          "Recall@1": 0.3333,
+          "Recall@2": 0.3333,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "mother in law",
+          "recorded by",
+          "ernie k doe"
+        ],
+        [
+          "mother in law",
+          "produced by",
+          "allen toussaint"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__632234_122868",
+      "question": "Where did the author of The National Dream go to university?",
+      "hipporag_answer": "The University of British Columbia.",
+      "dense_answer": "Not specified in the given passage.",
+      "gold_answers": [
+        "University of British Columbia",
+        "The University of British Columbia"
+      ],
+      "hipporag": {
+        "id": "2hop__632234_122868",
+        "seconds": 1.2739082499974757,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 1.0,
+          "F1": 1.0
+        }
+      },
+      "dense": {
+        "id": "2hop__632234_122868",
+        "seconds": 0.5046878330031177,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "the national dream",
+          "author",
+          "pierre berton"
+        ],
+        [
+          "the national dream",
+          "country of publication",
+          "canada"
+        ],
+        [
+          "the national dream",
+          "year of publication",
+          "1970"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__143650_152023",
+      "question": "What label was responsible for who sang or played Delta Hardware?",
+      "hipporag_answer": "Real World Records.",
+      "dense_answer": "Real World Records.",
+      "gold_answers": [
+        "Kicking Mule Records",
+        "Real World Records"
+      ],
+      "hipporag": {
+        "id": "2hop__143650_152023",
+        "seconds": 1.3840857079994748,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 1.0,
+          "F1": 1.0
+        }
+      },
+      "dense": {
+        "id": "2hop__143650_152023",
+        "seconds": 0.5816531669988763,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 1.0,
+          "F1": 1.0
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "4hop1__58323_375563_161848_61344",
+      "question": "What continent is the country located near the country of citizenship of The Book Thief's author part of?",
+      "hipporag_answer": "Not on any single continent.",
+      "dense_answer": "Europe.",
+      "gold_answers": [
+        "submerged continent of Zealandia",
+        "Zealandia"
+      ],
+      "hipporag": {
+        "id": "4hop1__58323_375563_161848_61344",
+        "seconds": 1.9665865829956601,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.25,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 0.75,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.2222
+        }
+      },
+      "dense": {
+        "id": "4hop1__58323_375563_161848_61344",
+        "seconds": 0.4399221249987022,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.5,
+          "Recall@10": 0.5,
+          "Recall@20": 0.5,
+          "Recall@30": 0.75,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "the book thief",
+          "is based on",
+          "the novel the book thief by markus zusak"
+        ],
+        [
+          "the book thief",
+          "is a",
+          "film"
+        ],
+        [
+          "the book thief",
+          "is about",
+          "a young girl living with her adoptive german family during the nazi era"
+        ],
+        [
+          "the book thief",
+          "stars",
+          "geoffrey rush"
+        ],
+        [
+          "the book thief",
+          "was directed by",
+          "brian percival"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__846844_47134",
+      "question": "What is the mascot of the school that owns Goss Stadium at Coleman Field?",
+      "hipporag_answer": "Oregon State University.",
+      "dense_answer": "Oregon State University.",
+      "gold_answers": [
+        "Benny Beaver"
+      ],
+      "hipporag": {
+        "id": "2hop__846844_47134",
+        "seconds": 1.2502402090030955,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "2hop__846844_47134",
+        "seconds": 0.42350845799956005,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "goss stadium at coleman field",
+          "serves as",
+          "home field for the oregon state beavers"
+        ]
+      ]
+    },
+    {
+      "id": "4hop1__88342_49853_128008_89859",
+      "question": "When does the regular season of the league where the team with the most titles from the series after which the MLB MVP award is given out plays?",
+      "hipporag_answer": "The regular season of the American League (AL) takes place before the World Series. This is because Miguel Cabrera, who won the Most Valuable Player Award twice, was playing for the Detroit Tigers, an AL team. The World Series is held in the National League (NL), so the teams winning it are not part of the AL's regular season.",
+      "dense_answer": "The regular season of the American League (AL) occurs between March 30 and September 30. This period covers the time when teams play their home games against other AL teams within Major League Baseball. The World Series typically takes place during this timeframe as well, though it's not a requirement for the regular season to end on September 30.",
+      "gold_answers": [
+        "March 29, 2018"
+      ],
+      "hipporag": {
+        "id": "4hop1__88342_49853_128008_89859",
+        "seconds": 2.5932399169978453,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "dense": {
+        "id": "4hop1__88342_49853_128008_89859",
+        "seconds": 1.2189644999962184,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0357
+        }
+      },
+      "graph_seeds": [
+        [
+          "most valuable player award",
+          "takes place",
+          "before the postseason"
+        ],
+        [
+          "mlb",
+          "has award",
+          "most valuable player award"
+        ],
+        [
+          "2018 major league baseball season",
+          "postseason begins on",
+          "october 2"
+        ],
+        [
+          "2018 major league baseball season",
+          "starts on",
+          "march 29 2018"
+        ],
+        [
+          "2018 major league baseball season",
+          "ends on",
+          "september 30"
+        ]
+      ]
+    },
+    {
+      "id": "4hop2__161602_426860_88460_20988",
+      "question": "What major conflict is the country between the country that hosted the tournament and the country where That Dam is from known for?",
+      "hipporag_answer": "The information provided does not mention any conflicts involving Myanmar (Burma) and Thailand. The text discusses ethnic strife, civil wars, human rights issues, and political changes but does not specify any ongoing conflicts. Therefore, based on the available information, it cannot be determined what major conflict the country hosting the tournament and the country where the dam is located are known for.",
+      "dense_answer": "Sri Lanka and India.",
+      "gold_answers": [
+        "one of the world's longest-running ongoing civil wars."
+      ],
+      "hipporag": {
+        "id": "4hop2__161602_426860_88460_20988",
+        "seconds": 2.201648959002341,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.25,
+          "Recall@5": 0.75,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0968
+        }
+      },
+      "dense": {
+        "id": "4hop2__161602_426860_88460_20988",
+        "seconds": 0.5236880840020604,
+        "retrieval": {
+          "Recall@1": 0.25,
+          "Recall@2": 0.5,
+          "Recall@5": 0.5,
+          "Recall@10": 0.75,
+          "Recall@20": 0.75,
+          "Recall@30": 0.75,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.0
+        }
+      },
+      "graph_seeds": [
+        [
+          "myanmar",
+          "shares borders with",
+          "thailand"
+        ],
+        [
+          "myanmar",
+          "shares borders with",
+          "india"
+        ],
+        [
+          "cricket world cup",
+          "was held in",
+          "pakistan"
+        ],
+        [
+          "myanmar",
+          "shares borders with",
+          "china"
+        ],
+        [
+          "myanmar",
+          "shares borders with",
+          "bangladesh"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__153573_109006",
+      "question": "Who developed the eponymous character from the series that contains Mickey's Safari in Letterland?",
+      "hipporag_answer": "Walt Disney and Ub Iwerks developed the eponymous character from the series containing \"Mickey's Safari in Letterland.\"",
+      "dense_answer": "Walt Disney and Ub Iwerks developed the eponymous character from the series containing \"Mickey's Safari in Letterland.\"",
+      "gold_answers": [
+        "Walt Disney",
+        "Ub Iwerks"
+      ],
+      "hipporag": {
+        "id": "2hop__153573_109006",
+        "seconds": 1.6009755829945789,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.2353
+        }
+      },
+      "dense": {
+        "id": "2hop__153573_109006",
+        "seconds": 0.8527715000018361,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.2353
+        }
+      },
+      "graph_seeds": []
+    },
+    {
+      "id": "2hop__135963_486257",
+      "question": "The scientist that the GHZ experiment is named for is in what field of work?",
+      "hipporag_answer": "Quantum Physics",
+      "dense_answer": "Quantum Physics",
+      "gold_answers": [
+        "physic",
+        "physics",
+        "Physics",
+        "Physic"
+      ],
+      "hipporag": {
+        "id": "2hop__135963_486257",
+        "seconds": 1.1653736669977661,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.6667
+        }
+      },
+      "dense": {
+        "id": "2hop__135963_486257",
+        "seconds": 0.5863332919980166,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 1.0,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.6667
+        }
+      },
+      "graph_seeds": [
+        [
+          "ghz",
+          "analyzed certain measurements involving",
+          "four observers"
+        ],
+        [
+          "anton zeilinger",
+          "is a",
+          "person"
+        ]
+      ]
+    },
+    {
+      "id": "2hop__107548_124896",
+      "question": "Who is the father of the artist who painted Head I?",
+      "hipporag_answer": "Francis Bacon is not explicitly stated to be the son of Sir Nicholas Bacon or Anne Cooke in the given information. However, it is common knowledge that Francis Bacon was born around 1948, which would make him the son of Sir Nicholas Bacon, who died in 1623. Therefore, Sir Nicholas Bacon is considered the father of Francis Bacon.",
+      "dense_answer": "The father of Francis Bacon was Sir Nicholas Bacon.",
+      "gold_answers": [
+        "Nicholas Bacon",
+        "Sir Nicholas Bacon"
+      ],
+      "hipporag": {
+        "id": "2hop__107548_124896",
+        "seconds": 1.751266333994863,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.1053
+        }
+      },
+      "dense": {
+        "id": "2hop__107548_124896",
+        "seconds": 0.5725595830008388,
+        "retrieval": {
+          "Recall@1": 0.5,
+          "Recall@2": 0.5,
+          "Recall@5": 1.0,
+          "Recall@10": 1.0,
+          "Recall@20": 1.0,
+          "Recall@30": 1.0,
+          "Recall@50": 1.0,
+          "Recall@100": 1.0,
+          "Recall@150": 1.0,
+          "Recall@200": 1.0
+        },
+        "qa": {
+          "ExactMatch": 0.0,
+          "F1": 0.5455
+        }
+      },
+      "graph_seeds": [
+        [
+          "head i",
+          "is a painting by",
+          "irish born british figurative artist francis bacon"
+        ]
+      ]
+    }
+  ]
+}

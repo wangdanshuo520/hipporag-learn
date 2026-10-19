@@ -1,0 +1,44 @@
+INFO:hipporag.StandardRAG:Creating working directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-standard-1f6d29eda0b9/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+INFO:hipporag.embedding_store:Creating working directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-standard-1f6d29eda0b9/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/chunk_embeddings
+INFO:hipporag.prompts.prompt_template_manager:Loading templates from directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/vendor/HippoRAG-main/src/hipporag/prompts/templates
+INFO:hipporag.StandardRAG:Indexing Documents
+INFO:hipporag.embedding_store:Inserting 3 new records, 0 records already exist.
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 26.48it/s]
+INFO:hipporag.embedding_store:Saving new records.
+INFO:hipporag.embedding_store:Saved 3 records to /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-standard-1f6d29eda0b9/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/chunk_embeddings/vdb_chunk.parquet
+INFO:hipporag.StandardRAG:Preparing for fast retrieval.
+INFO:hipporag.StandardRAG:Loading keys.
+INFO:hipporag.StandardRAG:Loading embeddings.
+INFO:hipporag.StandardRAG:Encoding 1 queries for query_to_passage.
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 241.66it/s]
+Retrieving:   0%|          | 0/1 [00:00<?, ?it/s]INFO:hipporag.StandardRAG:No facts found after reranking, return DPR results
+Retrieving: 100%|██████████| 1/1 [00:00<00:00, 9986.44it/s]
+INFO:hipporag.StandardRAG:Total Retrieval Time 0.01s
+WARNING:hipporag.evaluation.retrieval_eval:Length of retrieved docs (3) is smaller than largest topk for recall score (200)
+INFO:hipporag.StandardRAG:Evaluation results for retrieval: {'Recall@1': 0.0, 'Recall@2': 0.0, 'Recall@5': 1.0, 'Recall@10': 1.0, 'Recall@20': 1.0, 'Recall@30': 1.0, 'Recall@50': 1.0, 'Recall@100': 1.0, 'Recall@150': 1.0, 'Recall@200': 1.0}
+Collecting QA prompts:   0%|          | 0/1 [00:00<?, ?it/s]WARNING:hipporag.StandardRAG:rag_qa_None does not have a customized prompt template. Using MUSIQUE's prompt template instead.
+Collecting QA prompts: 100%|██████████| 1/1 [00:00<00:00, 16320.25it/s]
+QA Reading:   0%|          | 0/1 [00:00<?, ?it/s]INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+QA Reading: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]QA Reading: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]
+Extraction Answers from LLM Response: 0it [00:00, ?it/s]Extraction Answers from LLM Response: 1it [00:00, 36792.14it/s]
+INFO:hipporag.StandardRAG:Evaluation results for QA: {'ExactMatch': 0.0, 'F1': 0.0}
+{
+  "result": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-standard-1f6d29eda0b9/result.json",
+  "retrieval": {
+    "Recall@1": 0.0,
+    "Recall@2": 0.0,
+    "Recall@5": 1.0,
+    "Recall@10": 1.0,
+    "Recall@20": 1.0,
+    "Recall@30": 1.0,
+    "Recall@50": 1.0,
+    "Recall@100": 1.0,
+    "Recall@150": 1.0,
+    "Recall@200": 1.0
+  },
+  "qa": {
+    "ExactMatch": 0.0,
+    "F1": 0.0
+  }
+}

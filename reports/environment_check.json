@@ -1,0 +1,23 @@
+{
+  "python": "3.10.22",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "key_configured": false,
+  "models": {
+    "llm": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "embedding": "BAAI/bge-small-en-v1.5",
+    "thinking": "disabled"
+  },
+  "packages": {
+    "hipporag": "2.0.0a5",
+    "torch": "2.5.1",
+    "transformers": "4.45.2",
+    "sentence-transformers": "3.3.1",
+    "openai": "3.29.0",
+    "python-dotenv": "1.2.4"
+  },
+  "hipporag_import": true,
+  "mps_available": false,
+  "cuda_available": false,
+  "embedding_device": "cpu (upstream Transformers backend on this Mac)"
+}

@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/OSU-NLP-Group/HippoRAG",
+  "commit": "d5c8329422e0a0b834a15874545cb6a74b4f9b26",
+  "archive_sha256": "0aa7bad1b5753ce6991826ac91a6550aae66d2a5c0901679b5272c4742b82b2a",
+  "verified_archive_matches_local_source": true,
+  "paper_era_reference_commit": "242abfbefa03d6fce7a5c107e10ec24f22945b1f",
+  "paper_era_date": "2025-06-24T21:02:05Z",
+  "note": "Current official implementation, not an exact paper-era code/model reproduction."
+}

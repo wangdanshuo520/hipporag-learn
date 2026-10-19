@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "HippoRAG2: upstream sample", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_baseline.py", "args": ["--method", "hipporag", "--dataset", "sample"], "cwd": "${workspaceFolder}", "envFile": "${workspaceFolder}/.env", "console": "integratedTerminal", "justMyCode": false},
+    {"name": "Dense RAG: upstream sample", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_baseline.py", "args": ["--method", "standard", "--dataset", "sample"], "cwd": "${workspaceFolder}", "envFile": "${workspaceFolder}/.env", "console": "integratedTerminal", "justMyCode": false},
+    {"name": "Local Qwen + HippoRAG2: upstream sample", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_baseline.py", "args": ["--backend", "local", "--method", "hipporag", "--dataset", "sample"], "cwd": "${workspaceFolder}", "envFile": "${workspaceFolder}/.env", "console": "integratedTerminal", "justMyCode": false}
+  ]
+}

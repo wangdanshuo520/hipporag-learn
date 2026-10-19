@@ -1,0 +1,29 @@
+test_azure_resource_and_legacy_urls_are_resolved_explicitly (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_azure_sdk_builds_expected_chat_request (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_chat_wrapper_rejects_unaccounted_response_without_caching (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_chat_wrapper_uses_real_typed_sdk_response (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_embedding_wrapper_aggregates_usage_across_batches (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... 
+Batch Encoding:   0%|          | 0/2 [00:00<?, ?it/s]
+Batch Encoding: 100%|██████████| 2/2 [00:00<00:00, 280.57it/s]
+ok
+test_embedding_wrapper_marks_partial_batch_usage_as_incomplete (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... 
+Batch Encoding:   0%|          | 0/2 [00:00<?, ?it/s]
+Batch Encoding:  50%|█████     | 1/2 [00:00<00:00, 1968.23it/s]
+ok
+test_embedding_wrapper_marks_transport_failure_usage_unknown (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_embedding_wrapper_preserves_known_usage_when_payload_is_invalid (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_embedding_wrapper_rejects_unaccounted_response (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_embedding_wrapper_sends_float_and_restores_input_order (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_full_operation_base_url_is_rejected (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_installed_openai_sdk_is_in_supported_range (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_loopback_placeholder_does_not_mutate_process_environment (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_responses_wrapper_rejects_chat_completions_response_format (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_responses_wrapper_rejects_empty_output (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_responses_wrapper_uses_real_typed_sdk_response (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_sigv4_event_hook_works_with_sdk_native_http_client (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+test_wrappers_accept_standard_azure_resource_endpoints (test_openai_sdk_compat.OpenAISDKCompatibilityTest) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.954s
+
+OK

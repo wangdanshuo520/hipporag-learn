@@ -1,0 +1,42 @@
+[
+  {
+    "chunk": "chunk-8be1a30fc405598da002a69f2f45634e",
+    "title": "Roberto Clemente",
+    "entities": [
+      "Roberto Clemente",
+      "Barrio San Antón",
+      "Pittsburgh Pirates"
+    ],
+    "metadata": {
+      "prompt_tokens": 559,
+      "completion_tokens": 26,
+      "total_tokens": 585,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-19dfa495-6909-4bff-af78-91777a6a6a98",
+      "model": "default_model",
+      "cached_tokens": 504,
+      "cache_hit": true
+    },
+    "response": "{\"named_entities\":\n    [\"Roberto Clemente\", \"Barrio San Antón\", \"Pittsburgh Pirates\"]\n}"
+  },
+  {
+    "chunk": "chunk-0a2997bcc62cde2a452d07a1a0d99d8f",
+    "title": "Presidential Succession Act",
+    "entities": [
+      "Speaker of the House of Representatives",
+      "House of Representatives",
+      "Congress"
+    ],
+    "metadata": {
+      "prompt_tokens": 288,
+      "completion_tokens": 18,
+      "total_tokens": 306,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d7db3117-e5f7-45bc-a027-b2735aae379a",
+      "model": "default_model",
+      "cached_tokens": 233,
+      "cache_hit": true
+    },
+    "response": "{\"named_entities\": [\"Speaker of the House of Representatives\", \"House of Representatives\", \"Congress\"]}"
+  }
+]

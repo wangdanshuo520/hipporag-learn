@@ -1,0 +1,79 @@
+test_batch_delete_of_shared_triple_removes_all_state (test_hipporag_state_consistency.HippoRAGStateConsistencyTest) ... 
+0it [00:00, ?it/s]
+2it [00:00, 25343.23it/s]
+
+0it [00:00, ?it/s]
+2it [00:00, 152520.15it/s]
+ok
+test_delete_deduplicates_triples_after_normalization (test_hipporag_state_consistency.HippoRAGStateConsistencyTest) ... {'num_phrase_nodes': 2, 'num_passage_nodes': 2, 'num_total_nodes': 4, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 4, 'num_synonymy_triples': 0, 'num_total_triples': 5}
+
+0it [00:00, ?it/s]
+1it [00:00, 45590.26it/s]
+
+0it [00:00, ?it/s]
+1it [00:00, 119837.26it/s]
+ok
+test_delete_last_document_persists_empty_openie_state (test_hipporag_state_consistency.HippoRAGStateConsistencyTest) ... {'num_phrase_nodes': 2, 'num_passage_nodes': 1, 'num_total_nodes': 3, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 2, 'num_synonymy_triples': 0, 'num_total_triples': 3}
+
+0it [00:00, ?it/s]
+1it [00:00, 59074.70it/s]
+
+0it [00:00, ?it/s]
+1it [00:00, 102300.10it/s]
+{'num_phrase_nodes': 2, 'num_passage_nodes': 1, 'num_total_nodes': 3, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 2, 'num_synonymy_triples': 0, 'num_total_triples': 3}
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+ok
+test_incremental_index_counts_only_new_fact_edges_and_rebuilds_entity_sources (test_hipporag_state_consistency.HippoRAGStateConsistencyTest) ... 
+0it [00:00, ?it/s]
+1it [00:00, 59074.70it/s]
+
+0it [00:00, ?it/s]
+1it [00:00, 99864.38it/s]
+{'num_phrase_nodes': 2, 'num_passage_nodes': 1, 'num_total_nodes': 3, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 2, 'num_synonymy_triples': 0, 'num_total_triples': 3}
+
+0it [00:00, ?it/s]
+2it [00:00, 118149.41it/s]
+
+0it [00:00, ?it/s]
+2it [00:00, 254200.24it/s]
+ok
+test_index_retrieve_and_rag_qa_pipeline (test_hipporag_state_consistency.HippoRAGStateConsistencyTest) ... {'num_phrase_nodes': 2, 'num_passage_nodes': 2, 'num_total_nodes': 4, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 4, 'num_synonymy_triples': 0, 'num_total_triples': 5}
+
+0it [00:00, ?it/s]
+2it [00:00, 99864.38it/s]
+
+0it [00:00, ?it/s]
+2it [00:00, 199728.76it/s]
+{'num_phrase_nodes': 2, 'num_passage_nodes': 2, 'num_total_nodes': 4, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 4, 'num_synonymy_triples': 0, 'num_total_triples': 5}
+
+Retrieving:   0%|          | 0/1 [00:00<?, ?it/s]
+Retrieving: 100%|██████████| 1/1 [00:00<00:00, 1639.68it/s]
+
+Retrieving:   0%|          | 0/1 [00:00<?, ?it/s]
+Retrieving: 100%|██████████| 1/1 [00:00<00:00, 5607.36it/s]
+
+Collecting QA prompts:   0%|          | 0/1 [00:00<?, ?it/s]rag_qa_None does not have a customized prompt template. Using MUSIQUE's prompt template instead.
+
+Collecting QA prompts: 100%|██████████| 1/1 [00:00<00:00, 11781.75it/s]
+
+QA Reading:   0%|          | 0/1 [00:00<?, ?it/s]
+QA Reading: 100%|██████████| 1/1 [00:00<00:00, 127100.12it/s]
+
+Extraction Answers from LLM Response: 0it [00:00, ?it/s]
+Extraction Answers from LLM Response: 1it [00:00, 144631.17it/s]
+ok
+test_sequential_delete_of_shared_triple_removes_entity_sources (test_hipporag_state_consistency.HippoRAGStateConsistencyTest) ... 
+0it [00:00, ?it/s]
+2it [00:00, 135300.13it/s]
+
+0it [00:00, ?it/s]
+2it [00:00, 226719.14it/s]
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 21.175s
+
+OK
+{'num_phrase_nodes': 2, 'num_passage_nodes': 2, 'num_total_nodes': 4, 'num_extracted_triples': 1, 'num_triples_with_passage_node': 4, 'num_synonymy_triples': 0, 'num_total_triples': 5}

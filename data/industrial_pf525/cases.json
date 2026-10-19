@@ -1,0 +1,602 @@
+[
+  {
+    "id": "supply_voltage-a",
+    "pair_group": "supply_voltage",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a supply-voltage fault. The displayed fault code is F004. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F004"
+    },
+    "gold_decision": "CHECK_LOW_LINE",
+    "gold_evidence_ids": [
+      "pf525-f004"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "supply_voltage-b",
+    "pair_group": "supply_voltage",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a supply-voltage fault. The displayed fault code is F005. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F005"
+    },
+    "gold_decision": "CHECK_HIGH_LINE_REGEN",
+    "gold_evidence_ids": [
+      "pf525-f005"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "supply_voltage-missing",
+    "pair_group": "supply_voltage",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a supply-voltage fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f004",
+      "pf525-f005"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "temperature-a",
+    "pair_group": "temperature",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports an over-temperature fault. The displayed fault code is F008. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F008"
+    },
+    "gold_decision": "CHECK_HEATSINK_COOLING",
+    "gold_evidence_ids": [
+      "pf525-f008"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "temperature-b",
+    "pair_group": "temperature",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports an over-temperature fault. The displayed fault code is F009. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F009"
+    },
+    "gold_decision": "CHECK_CONTROL_COOLING",
+    "gold_evidence_ids": [
+      "pf525-f009"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "temperature-missing",
+    "pair_group": "temperature",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports an over-temperature fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f008",
+      "pf525-f009"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "motor_load-a",
+    "pair_group": "motor_load",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a motor acceleration or overload fault. The displayed fault code is F006. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F006"
+    },
+    "gold_decision": "CHECK_STALL_ACCEL_LOAD",
+    "gold_evidence_ids": [
+      "pf525-f006"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "motor_load-b",
+    "pair_group": "motor_load",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a motor acceleration or overload fault. The displayed fault code is F007. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F007"
+    },
+    "gold_decision": "CHECK_MOTOR_OVERLOAD",
+    "gold_evidence_ids": [
+      "pf525-f007"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "motor_load-missing",
+    "pair_group": "motor_load",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a motor acceleration or overload fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f006",
+      "pf525-f007"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "signal_loss-a",
+    "pair_group": "signal_loss",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a signal-loss fault. The displayed fault code is F021. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F021"
+    },
+    "gold_decision": "CHECK_OUTPUT_PHASE",
+    "gold_evidence_ids": [
+      "pf525-f021"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "signal_loss-b",
+    "pair_group": "signal_loss",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a signal-loss fault. The displayed fault code is F029. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F029"
+    },
+    "gold_decision": "CHECK_ANALOG_INPUT",
+    "gold_evidence_ids": [
+      "pf525-f029"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "signal_loss-missing",
+    "pair_group": "signal_loss",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a signal-loss fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f021",
+      "pf525-f029"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "power_or_overload-a",
+    "pair_group": "power_or_overload",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a power or drive-overload fault. The displayed fault code is F003. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F003"
+    },
+    "gold_decision": "CHECK_POWER_FUSES_LOAD",
+    "gold_evidence_ids": [
+      "pf525-f003"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "power_or_overload-b",
+    "pair_group": "power_or_overload",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a power or drive-overload fault. The displayed fault code is F064. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F064"
+    },
+    "gold_decision": "CHECK_DRIVE_OVERLOAD",
+    "gold_evidence_ids": [
+      "pf525-f064"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "power_or_overload-missing",
+    "pair_group": "power_or_overload",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a power or drive-overload fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f003",
+      "pf525-f064"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "network_control_a-a",
+    "pair_group": "network_control_a",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a network-control interruption. The displayed fault code is F071. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F071"
+    },
+    "gold_decision": "CHECK_DSI_NETWORK",
+    "gold_evidence_ids": [
+      "pf525-f071"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "network_control_a-b",
+    "pair_group": "network_control_a",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a network-control interruption. The displayed fault code is F072. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F072"
+    },
+    "gold_decision": "CHECK_OPTION_NETWORK",
+    "gold_evidence_ids": [
+      "pf525-f072"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "network_control_a-missing",
+    "pair_group": "network_control_a",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a network-control interruption, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f071",
+      "pf525-f072"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "network_control_b-a",
+    "pair_group": "network_control_b",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a network-control interruption. The displayed fault code is F073. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F073"
+    },
+    "gold_decision": "CHECK_EMBEDDED_ETHERNET",
+    "gold_evidence_ids": [
+      "pf525-f073"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "network_control_b-b",
+    "pair_group": "network_control_b",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a network-control interruption. The displayed fault code is F081. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F081"
+    },
+    "gold_decision": "CHECK_DSI_MASTER_COMM",
+    "gold_evidence_ids": [
+      "pf525-f081"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "network_control_b-missing",
+    "pair_group": "network_control_b",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports a network-control interruption, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f073",
+      "pf525-f081"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "network_internal-a",
+    "pair_group": "network_internal",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports an internal communication fault. The displayed fault code is F082. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F082"
+    },
+    "gold_decision": "CHECK_OPTION_CARD_LINK",
+    "gold_evidence_ids": [
+      "pf525-f082"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "network_internal-b",
+    "pair_group": "network_internal",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports an internal communication fault. The displayed fault code is F083. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F083"
+    },
+    "gold_decision": "CHECK_EMBEDDED_ADAPTER_LINK",
+    "gold_evidence_ids": [
+      "pf525-f083"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "network_internal-missing",
+    "pair_group": "network_internal",
+    "split": "dev",
+    "question": "A PowerFlex 525 drive reports an internal communication fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f082",
+      "pf525-f083"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "safety-a",
+    "pair_group": "safety",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a safety-input related fault. The displayed fault code is F059. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F059"
+    },
+    "gold_decision": "CHECK_SAFETY_INPUT_STATUS",
+    "gold_evidence_ids": [
+      "pf525-f059"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "safety-b",
+    "pair_group": "safety",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a safety-input related fault. The displayed fault code is F111. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F111"
+    },
+    "gold_decision": "CHECK_SAFETY_HARDWARE",
+    "gold_evidence_ids": [
+      "pf525-f111"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "safety-missing",
+    "pair_group": "safety",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a safety-input related fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f059",
+      "pf525-f111"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "control_power_module-a",
+    "pair_group": "control_power_module",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a control/power-module compatibility fault. The displayed fault code is F106. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F106"
+    },
+    "gold_decision": "CHECK_025HP_INCOMPATIBILITY",
+    "gold_evidence_ids": [
+      "pf525-f106"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "control_power_module-b",
+    "pair_group": "control_power_module",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a control/power-module compatibility fault. The displayed fault code is F107. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F107"
+    },
+    "gold_decision": "CHECK_UNRECOGNIZED_MODULE",
+    "gold_evidence_ids": [
+      "pf525-f107"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "control_power_module-missing",
+    "pair_group": "control_power_module",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a control/power-module compatibility fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f106",
+      "pf525-f107"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "firmware-a",
+    "pair_group": "firmware",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a firmware-related fault. The displayed fault code is F125. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F125"
+    },
+    "gold_decision": "CHECK_FIRMWARE_FLASH",
+    "gold_evidence_ids": [
+      "pf525-f125"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "firmware-b",
+    "pair_group": "firmware",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a firmware-related fault. The displayed fault code is F127. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F127"
+    },
+    "gold_decision": "CHECK_DSI_FIRMWARE_FLASH",
+    "gold_evidence_ids": [
+      "pf525-f127"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "firmware-missing",
+    "pair_group": "firmware",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a firmware-related fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f125",
+      "pf525-f127"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  },
+  {
+    "id": "mechanical_load-a",
+    "pair_group": "mechanical_load",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a motor/load-connection fault. The displayed fault code is F015. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F015"
+    },
+    "gold_decision": "CHECK_LOAD_LOSS",
+    "gold_evidence_ids": [
+      "pf525-f015"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "mechanical_load-b",
+    "pair_group": "mechanical_load",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a motor/load-connection fault. The displayed fault code is F063. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": "F063"
+    },
+    "gold_decision": "CHECK_SHEAR_PIN_LIMIT",
+    "gold_evidence_ids": [
+      "pf525-f063"
+    ],
+    "needs_clarification": false,
+    "scenario_origin": "constructed from source-checked fault row"
+  },
+  {
+    "id": "mechanical_load-missing",
+    "pair_group": "mechanical_load",
+    "split": "test",
+    "question": "A PowerFlex 525 drive reports a motor/load-connection fault, but the displayed fault code was not recorded. Which diagnostic check is supported by the guide?",
+    "observed_state": {
+      "model": "PowerFlex 525",
+      "fault_code": null
+    },
+    "gold_decision": "ASK_FAULT_CODE",
+    "gold_evidence_ids": [
+      "pf525-f015",
+      "pf525-f063"
+    ],
+    "needs_clarification": true,
+    "clarification_field": "fault_code",
+    "scenario_origin": "constructed missing-field variant; not a field incident"
+  }
+]

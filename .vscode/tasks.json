@@ -1,0 +1,271 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Check environment (offline)",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/check_environment.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Check DeepSeek API",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/check_environment.py",
+        "--api"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "3. Run HippoRAG2 sample",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--method",
+        "hipporag"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "4. Run dense baseline sample",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--method",
+        "standard"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "5. Start local Qwen server",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/start_local_server.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "6. Check local Qwen",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/check_local_model.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "7. Run local HippoRAG2 sample",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "local",
+        "--method",
+        "hipporag"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "8. Run local dense baseline sample",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "local",
+        "--method",
+        "standard"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev50: local hipporag",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "local",
+        "--dataset",
+        "musique",
+        "--dataset-dir",
+        "data/musique_dev50",
+        "--method",
+        "hipporag",
+        "--per-query"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev50: local standard",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "local",
+        "--dataset",
+        "musique",
+        "--dataset-dir",
+        "data/musique_dev50",
+        "--method",
+        "standard",
+        "--per-query"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev50: adapted local hipporag",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "local",
+        "--dataset",
+        "musique",
+        "--dataset-dir",
+        "data/musique_dev50",
+        "--method",
+        "hipporag",
+        "--per-query",
+        "--local-structured"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev50: adapted local standard",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "local",
+        "--dataset",
+        "musique",
+        "--dataset-dir",
+        "data/musique_dev50",
+        "--method",
+        "standard",
+        "--per-query",
+        "--local-structured"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev50: DeepSeek hipporag",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "deepseek",
+        "--dataset",
+        "musique",
+        "--dataset-dir",
+        "data/musique_dev50",
+        "--method",
+        "hipporag",
+        "--per-query"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev50: DeepSeek standard",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_baseline.py",
+        "--backend",
+        "deepseek",
+        "--dataset",
+        "musique",
+        "--dataset-dir",
+        "data/musique_dev50",
+        "--method",
+        "standard",
+        "--per-query"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Industrial: local baselines",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_industrial_baselines.py",
+        "--phase",
+        "all"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Industrial: resume local generation",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "scripts/run_industrial_baselines.py",
+        "--phase",
+        "generation"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

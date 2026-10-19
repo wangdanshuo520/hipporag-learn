@@ -1,0 +1,314 @@
+[
+  {
+    "id": "pf525-f004",
+    "title": "PowerFlex 525 fault F004",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F004. DC bus undervoltage: inspect incoming AC line for low voltage or interruption. Diagnostic action ID: CHECK_LOW_LINE.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F004",
+      "action_id": "CHECK_LOW_LINE",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 4,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f005",
+    "title": "PowerFlex 525 fault F005",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F005. DC bus overvoltage: inspect high line voltage or transients and consider motor regeneration and deceleration time. Diagnostic action ID: CHECK_HIGH_LINE_REGEN.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F005",
+      "action_id": "CHECK_HIGH_LINE_REGEN",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 4,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f008",
+    "title": "PowerFlex 525 fault F008",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F008. Heatsink or power-module over-temperature: inspect heatsink blockage, rated ambient temperature, and fan. Diagnostic action ID: CHECK_HEATSINK_COOLING.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F008",
+      "action_id": "CHECK_HEATSINK_COOLING",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f009",
+    "title": "PowerFlex 525 fault F009",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F009. Control-module over-temperature: inspect ambient temperature, airflow obstruction, debris, and fan. Diagnostic action ID: CHECK_CONTROL_COOLING.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F009",
+      "action_id": "CHECK_CONTROL_COOLING",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f006",
+    "title": "PowerFlex 525 fault F006",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F006. Motor stall during acceleration or deceleration: inspect load and acceleration time/current-limit settings. Diagnostic action ID: CHECK_STALL_ACCEL_LOAD.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F006",
+      "action_id": "CHECK_STALL_ACCEL_LOAD",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 4,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f007",
+    "title": "PowerFlex 525 fault F007",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F007. Motor electronic overload: inspect excess load relative to P033 Motor OL Current and A530 Boost Select. Diagnostic action ID: CHECK_MOTOR_OVERLOAD.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F007",
+      "action_id": "CHECK_MOTOR_OVERLOAD",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 4,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f021",
+    "title": "PowerFlex 525 fault F021",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F021. Output phase loss when that protection is enabled: verify motor wiring and motor; A557 controls the feature. Diagnostic action ID: CHECK_OUTPUT_PHASE.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F021",
+      "action_id": "CHECK_OUTPUT_PHASE",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f029",
+    "title": "PowerFlex 525 fault F029",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F029. Analog input loss where configured to fault: inspect input connections and t094/t097 signal-loss parameters. Diagnostic action ID: CHECK_ANALOG_INPUT.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F029",
+      "action_id": "CHECK_ANALOG_INPUT",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f003",
+    "title": "PowerFlex 525 fault F003",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F003. Power loss associated with single-phase operation and load: inspect incoming line, input fuses, and load. Diagnostic action ID: CHECK_POWER_FUSES_LOAD.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F003",
+      "action_id": "CHECK_POWER_FUSES_LOAD",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 4,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f064",
+    "title": "PowerFlex 525 fault F064",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F064. Drive overload rating exceeded: inspect load and acceleration time. Diagnostic action ID: CHECK_DRIVE_OVERLOAD.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F064",
+      "action_id": "CHECK_DRIVE_OVERLOAD",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f071",
+    "title": "PowerFlex 525 fault F071",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F071. Modbus or DSI network control interrupted: inspect communications cabling, Modbus/DSI settings and status. Diagnostic action ID: CHECK_DSI_NETWORK.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F071",
+      "action_id": "CHECK_DSI_NETWORK",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f072",
+    "title": "PowerFlex 525 fault F072",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F072. Network option card remote control interrupted: inspect cabling, adapter settings, and external network status. Diagnostic action ID: CHECK_OPTION_NETWORK.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F072",
+      "action_id": "CHECK_OPTION_NETWORK",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f073",
+    "title": "PowerFlex 525 fault F073",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F073. Embedded EtherNet/IP control interrupted: inspect cabling, EtherNet/IP settings, and external network status. Diagnostic action ID: CHECK_EMBEDDED_ETHERNET.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F073",
+      "action_id": "CHECK_EMBEDDED_ETHERNET",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f081",
+    "title": "PowerFlex 525 fault F081",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F081. Communication with Modbus or DSI master interrupted: inspect cabling, settings, status, and C125 Comm Loss Action. Diagnostic action ID: CHECK_DSI_MASTER_COMM.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F081",
+      "action_id": "CHECK_DSI_MASTER_COMM",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f082",
+    "title": "PowerFlex 525 fault F082",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F082. Drive-to-network-option-card communication lost: inspect/reseat the option card and C125 Comm Loss Action. Diagnostic action ID: CHECK_OPTION_CARD_LINK.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F082",
+      "action_id": "CHECK_OPTION_CARD_LINK",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f083",
+    "title": "PowerFlex 525 fault F083",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F083. Internal communication with embedded EtherNet/IP adapter lost: inspect Ethernet settings, diagnostic parameters, and C125. Diagnostic action ID: CHECK_EMBEDDED_ADAPTER_LINK.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F083",
+      "action_id": "CHECK_EMBEDDED_ADAPTER_LINK",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f059",
+    "title": "PowerFlex 525 fault F059",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F059. Safety Open: both safety inputs are not enabled; inspect safety input signals and t105 configuration. Diagnostic action ID: CHECK_SAFETY_INPUT_STATUS.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F059",
+      "action_id": "CHECK_SAFETY_INPUT_STATUS",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f111",
+    "title": "PowerFlex 525 fault F111",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F111. Safety input hardware malfunction: inspect safety signals; if fault persists, service the control module. Diagnostic action ID: CHECK_SAFETY_HARDWARE.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F111",
+      "action_id": "CHECK_SAFETY_HARDWARE",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f106",
+    "title": "PowerFlex 525 fault F106",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F106. PowerFlex 525 control module does not support a 0.25 HP power module; check module compatibility, with a compatible power module or PowerFlex 523 control module as documented options. Diagnostic action ID: CHECK_025HP_INCOMPATIBILITY.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F106",
+      "action_id": "CHECK_025HP_INCOMPATIBILITY",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f107",
+    "title": "PowerFlex 525 fault F107",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F107. Control module cannot recognize the power module: check power module, then control module if the fault persists. Diagnostic action ID: CHECK_UNRECOGNIZED_MODULE.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F107",
+      "action_id": "CHECK_UNRECOGNIZED_MODULE",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f125",
+    "title": "PowerFlex 525 fault F125",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F125. Firmware corrupt, mismatched, or hardware-incompatible: attempt a valid firmware flash update. Diagnostic action ID: CHECK_FIRMWARE_FLASH.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F125",
+      "action_id": "CHECK_FIRMWARE_FLASH",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f127",
+    "title": "PowerFlex 525 fault F127",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F127. Critical firmware fault with DSI-only backup firmware: attempt a valid firmware flash update through DSI communications. Diagnostic action ID: CHECK_DSI_FIRMWARE_FLASH.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F127",
+      "action_id": "CHECK_DSI_FIRMWARE_FLASH",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 6,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f015",
+    "title": "PowerFlex 525 fault F015",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F015. Load-loss threshold/time met: inspect motor-to-load connection and A490/A491 settings. Diagnostic action ID: CHECK_LOAD_LOSS.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F015",
+      "action_id": "CHECK_LOAD_LOSS",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  },
+  {
+    "id": "pf525-f063",
+    "title": "PowerFlex 525 fault F063",
+    "text": "Applicable model: PowerFlex 525. Displayed fault: F063. Software shear-pin threshold/time met: inspect motor-to-load connection and A486-A489 settings. Diagnostic action ID: CHECK_SHEAR_PIN_LIMIT.",
+    "metadata": {
+      "model": "PowerFlex 525",
+      "fault_code": "F063",
+      "action_id": "CHECK_SHEAR_PIN_LIMIT",
+      "source_url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/du/520-du001_-en-e.pdf",
+      "source_page": 5,
+      "source_publication": "520-DU001D-EN-E, April 2016"
+    }
+  }
+]

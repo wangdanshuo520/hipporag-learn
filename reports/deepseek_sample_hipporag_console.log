@@ -1,0 +1,107 @@
+INFO:hipporag.HippoRAG:Creating working directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+INFO:hipporag.prompts.prompt_template_manager:Loading templates from directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/vendor/HippoRAG-main/src/hipporag/prompts/templates
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+INFO:hipporag.embedding_store:Creating working directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/chunk_embeddings
+INFO:hipporag.embedding_store:Creating working directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/entity_embeddings
+INFO:hipporag.embedding_store:Creating working directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/fact_embeddings
+INFO:hipporag.prompts.prompt_template_manager:Loading templates from directory: /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/vendor/HippoRAG-main/src/hipporag/prompts/templates
+INFO:hipporag.HippoRAG:Indexing Documents
+INFO:hipporag.HippoRAG:Performing OpenIE
+INFO:hipporag.embedding_store:Inserting 3 new records, 0 records already exist.
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.59it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.59it/s]
+INFO:hipporag.embedding_store:Saving new records.
+INFO:hipporag.embedding_store:Saved 3 records to /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/chunk_embeddings/vdb_chunk.parquet
+NER:   0%|          | 0/3 [00:00<?, ?it/s]INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+NER:   0%|          | 0/3 [00:00<?, ?it/s, billable_prompt_tokens=250, billable_completion_tokens=58, logical_prompt_tokens=250, logical_completion_tokens=58, num_cache_hit=0]NER:  33%|███▎      | 1/3 [00:00<00:01,  1.20it/s, billable_prompt_tokens=250, billable_completion_tokens=58, logical_prompt_tokens=250, logical_completion_tokens=58, num_cache_hit=0]NER:  33%|███▎      | 1/3 [00:00<00:01,  1.20it/s, billable_prompt_tokens=490, billable_completion_tokens=102, logical_prompt_tokens=490, logical_completion_tokens=102, num_cache_hit=0]NER:  33%|███▎      | 1/3 [00:01<00:01,  1.20it/s, billable_prompt_tokens=751, billable_completion_tokens=145, logical_prompt_tokens=751, logical_completion_tokens=145, num_cache_hit=0]NER: 100%|██████████| 3/3 [00:01<00:00,  3.22it/s, billable_prompt_tokens=751, billable_completion_tokens=145, logical_prompt_tokens=751, logical_completion_tokens=145, num_cache_hit=0]NER: 100%|██████████| 3/3 [00:01<00:00,  2.76it/s, billable_prompt_tokens=751, billable_completion_tokens=145, logical_prompt_tokens=751, logical_completion_tokens=145, num_cache_hit=0]
+Extracting triples:   0%|          | 0/3 [00:00<?, ?it/s]INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+Extracting triples:   0%|          | 0/3 [00:01<?, ?it/s, billable_prompt_tokens=592, billable_completion_tokens=202, logical_prompt_tokens=592, logical_completion_tokens=202, num_cache_hit=0]Extracting triples:  33%|███▎      | 1/3 [00:01<00:02,  1.29s/it, billable_prompt_tokens=592, billable_completion_tokens=202, logical_prompt_tokens=592, logical_completion_tokens=202, num_cache_hit=0]Extracting triples:  33%|███▎      | 1/3 [00:01<00:02,  1.29s/it, billable_prompt_tokens=1208, billable_completion_tokens=422, logical_prompt_tokens=1208, logical_completion_tokens=422, num_cache_hit=0]Extracting triples:  33%|███▎      | 1/3 [00:01<00:02,  1.29s/it, billable_prompt_tokens=1820, billable_completion_tokens=716, logical_prompt_tokens=1820, logical_completion_tokens=716, num_cache_hit=0]Extracting triples: 100%|██████████| 3/3 [00:01<00:00,  2.47it/s, billable_prompt_tokens=1820, billable_completion_tokens=716, logical_prompt_tokens=1820, logical_completion_tokens=716, num_cache_hit=0]Extracting triples: 100%|██████████| 3/3 [00:01<00:00,  2.03it/s, billable_prompt_tokens=1820, billable_completion_tokens=716, logical_prompt_tokens=1820, logical_completion_tokens=716, num_cache_hit=0]
+INFO:hipporag.HippoRAG:OpenIE results saved to /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/openie_state.json
+INFO:hipporag.HippoRAG:OpenIE results saved to /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/openie_results_ner_deepseek-flash.json
+INFO:hipporag.HippoRAG:Encoding Entities
+INFO:hipporag.embedding_store:Inserting 38 new records, 0 records already exist.
+Batch Encoding:   0%|          | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 57.29it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 102.41it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 133.87it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 152.26it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 168.72it/s]
+Batch Encoding: 100%|██████████| 5/5 [00:00<00:00, 88.45it/s]
+INFO:hipporag.embedding_store:Saving new records.
+INFO:hipporag.embedding_store:Saved 38 records to /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/entity_embeddings/vdb_entity.parquet
+INFO:hipporag.HippoRAG:Encoding Facts
+INFO:hipporag.embedding_store:Inserting 41 new records, 0 records already exist.
+Batch Encoding:   0%|          | 0/6 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 76.34it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 72.26it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 77.01it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 67.51it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 78.81it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 237.30it/s]
+Batch Encoding: 100%|██████████| 6/6 [00:00<00:00, 77.69it/s]
+INFO:hipporag.embedding_store:Saving new records.
+INFO:hipporag.embedding_store:Saved 41 records to /Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/index/deepseek-flash__Users_mingyue_Documents_Codex_2026-10-14_za_outputs_idea1-study_.cache_huggingface_hub_models--BAAI--bge-small-en-v1.5_snapshots_5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/fact_embeddings/vdb_fact.parquet
+INFO:hipporag.HippoRAG:Constructing Graph
+INFO:hipporag.HippoRAG:Adding OpenIE triples to graph.
+0it [00:00, ?it/s]3it [00:00, 10903.74it/s]
+INFO:hipporag.HippoRAG:Connecting passage nodes to phrase nodes.
+0it [00:00, ?it/s]3it [00:00, 89240.51it/s]
+INFO:hipporag.HippoRAG:Found 3 new chunks to save into graph.
+INFO:hipporag.HippoRAG:Expanding graph with synonymy edges
+INFO:hipporag.HippoRAG:Performing KNN retrieval for 38 new phrase nodes against 38 total nodes.
+KNN for Queries:   0%|          | 0/1 [00:00<?, ?it/s]KNN for Queries: 100%|██████████| 1/1 [00:00<00:00, 544.71it/s]
+  0%|          | 0/38 [00:00<?, ?it/s]100%|██████████| 38/38 [00:00<00:00, 267422.07it/s]
+INFO:hipporag.HippoRAG:Graph construction completed!
+INFO:hipporag.HippoRAG:Writing graph with 41 nodes, 82 edges
+INFO:hipporag.HippoRAG:Saving graph completed!
+INFO:hipporag.HippoRAG:Preparing for fast retrieval.
+INFO:hipporag.HippoRAG:Loading keys.
+INFO:hipporag.HippoRAG:Loading embeddings.
+INFO:hipporag.HippoRAG:Encoding 1 shared query embeddings.
+{'num_phrase_nodes': 38, 'num_passage_nodes': 3, 'num_total_nodes': 41, 'num_extracted_triples': 41, 'num_triples_with_passage_node': 41, 'num_synonymy_triples': 4, 'num_total_triples': 82}
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 61.58it/s]
+Retrieving:   0%|          | 0/1 [00:00<?, ?it/s]INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+Retrieving: 100%|██████████| 1/1 [00:00<00:00,  1.07it/s]Retrieving: 100%|██████████| 1/1 [00:00<00:00,  1.07it/s]
+INFO:hipporag.HippoRAG:Total Retrieval Time 0.95s
+INFO:hipporag.HippoRAG:Total Recognition Memory Time 0.93s
+INFO:hipporag.HippoRAG:Total PPR Time 0.00s
+INFO:hipporag.HippoRAG:Total Misc Time 0.02s
+WARNING:hipporag.evaluation.retrieval_eval:Length of retrieved docs (3) is smaller than largest topk for recall score (200)
+INFO:hipporag.HippoRAG:Evaluation results for retrieval: {'Recall@1': 1.0, 'Recall@2': 1.0, 'Recall@5': 1.0, 'Recall@10': 1.0, 'Recall@20': 1.0, 'Recall@30': 1.0, 'Recall@50': 1.0, 'Recall@100': 1.0, 'Recall@150': 1.0, 'Recall@200': 1.0}
+Collecting QA prompts:   0%|          | 0/1 [00:00<?, ?it/s]WARNING:hipporag.HippoRAG:rag_qa_None does not have a customized prompt template. Using MUSIQUE's prompt template instead.
+Collecting QA prompts: 100%|██████████| 1/1 [00:00<00:00, 7928.74it/s]
+QA Reading:   0%|          | 0/1 [00:00<?, ?it/s]INFO:httpx2:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+QA Reading: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]QA Reading: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]
+Extraction Answers from LLM Response: 0it [00:00, ?it/s]Extraction Answers from LLM Response: 1it [00:00, 41943.04it/s]
+INFO:hipporag.HippoRAG:Evaluation results for QA: {'ExactMatch': 0.0, 'F1': 0.0}
+{
+  "result": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/sample-hipporag-a3b80fc69071/result.json",
+  "retrieval": {
+    "Recall@1": 1.0,
+    "Recall@2": 1.0,
+    "Recall@5": 1.0,
+    "Recall@10": 1.0,
+    "Recall@20": 1.0,
+    "Recall@30": 1.0,
+    "Recall@50": 1.0,
+    "Recall@100": 1.0,
+    "Recall@150": 1.0,
+    "Recall@200": 1.0
+  },
+  "qa": {
+    "ExactMatch": 0.0,
+    "F1": 0.0
+  }
+}

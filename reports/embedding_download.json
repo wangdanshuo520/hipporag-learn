@@ -1,0 +1,14 @@
+{
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "snapshot_path": "/Users/mingyue/Documents/ChatGPT/hipporag-idea1/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "device": "cpu",
+  "shape": [
+    2,
+    384
+  ],
+  "finite_and_normalized": true,
+  "weight_sha256": {
+    "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+  }
+}

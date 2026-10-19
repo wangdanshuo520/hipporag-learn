@@ -1,0 +1,31 @@
+{
+  "scope": "real local dense retrieval smoke check only; no graph or generation",
+  "documents": 3,
+  "questions": 1,
+  "embedding": {
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "device": "cpu",
+    "shape": [
+      2,
+      384
+    ],
+    "finite_and_normalized": true,
+    "weight_sha256": {
+      "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+    }
+  },
+  "metrics": {
+    "Recall@1": 0.0,
+    "Recall@2": 0.0,
+    "Recall@3": 1.0
+  },
+  "ranked_titles": [
+    [
+      "Karl Deisseroth",
+      "David Eagleman",
+      "Thomas C. Sudhof"
+    ]
+  ]
+}

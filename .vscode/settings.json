@@ -1,0 +1,9 @@
+{
+  "git.path": "/Users/mingyue/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/git",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.analysis.extraPaths": ["${workspaceFolder}/vendor/HippoRAG-main/src"],
+  "files.exclude": {"**/__pycache__": true, ".cache": true},
+  "search.exclude": {".venv": true, ".cache": true, "models": true, "runs": true},
+  "terminal.integrated.env.osx": {"HF_HOME": "${workspaceFolder}/.cache/huggingface", "TOKENIZERS_PARALLELISM": "false"}
+}

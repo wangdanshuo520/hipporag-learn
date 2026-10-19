@@ -1,0 +1,12 @@
+test_bare_json_list (test_openie_extraction.TestOpenIEExtraction) ... ok
+test_embedding_model_fallback (test_openie_extraction.TestOpenIEExtraction) ... ok
+test_markdown_code_fence (test_openie_extraction.TestOpenIEExtraction) ... ok
+test_neither_format_is_an_error (test_openie_extraction.TestOpenIEExtraction) ... ok
+test_object_format_takes_precedence_over_bare_list (test_openie_extraction.TestOpenIEExtraction) ... ok
+test_standard_json_object (test_openie_extraction.TestOpenIEExtraction) ... ok
+test_triple_extraction_still_requires_object (test_openie_extraction.TestOpenIEExtraction) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

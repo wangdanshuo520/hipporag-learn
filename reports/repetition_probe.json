@@ -1,0 +1,39 @@
+[
+  {
+    "chunk": "chunk-8be1a30fc405598da002a69f2f45634e",
+    "title": "Roberto Clemente",
+    "entities": [
+      "Roberto Clemente",
+      "U.S. Marine Corps Reserve",
+      "Barrio San Antón, Carolina, Puerto Rico"
+    ],
+    "metadata": {
+      "prompt_tokens": 510,
+      "completion_tokens": 27,
+      "total_tokens": 537,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-bb35e4f3-e25f-4033-9d79-86218604bd2d",
+      "model": "default_model",
+      "cached_tokens": 160,
+      "cache_hit": false
+    },
+    "response": "[\"Roberto Clemente\", \"U.S. Marine Corps Reserve\", \"Barrio San Antón, Carolina, Puerto Rico\"]"
+  },
+  {
+    "chunk": "chunk-0a2997bcc62cde2a452d07a1a0d99d8f",
+    "title": "Presidential Succession Act",
+    "entities": [],
+    "metadata": {
+      "prompt_tokens": 239,
+      "completion_tokens": 15,
+      "total_tokens": 254,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9a437968-c282-44dc-b132-0741df8af83c",
+      "model": "default_model",
+      "cached_tokens": 160,
+      "cache_hit": false,
+      "error": "OpenIE response does not contain a valid JSON object with 'named_entities'. Expected {\"named_entities\": [...]} or a bare JSON list of entity strings."
+    },
+    "response": "[[\"Speaker of the House of Representatives\"], [\"House of Representatives\"]]"
+  }
+]

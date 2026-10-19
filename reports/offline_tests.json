@@ -1,0 +1,21 @@
+{
+  "scope": "upstream unit/component tests with mocked model backends",
+  "suites": [
+    {
+      "pattern": "test_openai_sdk_compat.py",
+      "exit_code": 0,
+      "log": "test_openai_sdk_compat.log"
+    },
+    {
+      "pattern": "test_hipporag_state_consistency.py",
+      "exit_code": 0,
+      "log": "test_hipporag_state_consistency.log"
+    },
+    {
+      "pattern": "test_openie_extraction.py",
+      "exit_code": 0,
+      "log": "test_openie_extraction.log"
+    }
+  ],
+  "passed": true
+}

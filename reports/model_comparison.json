@@ -1,0 +1,367 @@
+{
+  "scope": "固定的 MuSiQue 50 题、227 文档缩减语料开发集；不是原论文分数。",
+  "comparison_limit": "本地 Qwen 使用 strict-json-v3 实体/事实抽取适配和重复惩罚；DeepSeek 使用原始抽取提示词并关闭思考模式。因此跨模型差异也包含推理配置差异，不能只归因于模型能力。",
+  "question_ids": [
+    "2hop__619265_45326",
+    "4hop1__726675_508773_85832_745702",
+    "4hop3__524186_219173_638950_72134",
+    "2hop__865961_159109",
+    "3hop1__105837_160713_77246",
+    "4hop1__391525_49925_13759_736921",
+    "3hop2__127483_91678_10557",
+    "3hop1__764280_834494_34053",
+    "4hop1__72247_497223_15840_36014",
+    "3hop1__843207_755530_88011",
+    "3hop2__25177_19506_23299",
+    "2hop__88372_83837",
+    "2hop__46376_158105",
+    "2hop__363216_787353",
+    "2hop__754682_730690",
+    "2hop__80860_510545",
+    "4hop1__88342_49853_128008_86588",
+    "2hop__524623_82341",
+    "2hop__335418_279684",
+    "4hop2__103790_14670_8987_8529",
+    "3hop1__228_237521_291682",
+    "3hop2__89854_90327_76291",
+    "2hop__821197_368148",
+    "2hop__76402_653666",
+    "4hop1__88342_75218_128008_80286",
+    "3hop1__302383_503371_21711",
+    "2hop__69_59409",
+    "3hop1__390673_228453_10972",
+    "2hop__238499_431914",
+    "3hop2__87184_36497_76291",
+    "2hop__5658_25002",
+    "4hop2__161602_474028_88460_20988",
+    "4hop1__130480_53706_795904_580996",
+    "3hop2__668732_223623_162182",
+    "3hop1__672543_503371_21711",
+    "4hop3__862_846_326964_7713",
+    "2hop__159737_27110",
+    "4hop1__473563_309800_355213_203322",
+    "2hop__463353_66723",
+    "4hop1__46196_497223_15840_36002",
+    "3hop1__398232_326948_59893",
+    "2hop__632234_122868",
+    "2hop__143650_152023",
+    "4hop1__58323_375563_161848_61344",
+    "2hop__846844_47134",
+    "4hop1__88342_49853_128008_89859",
+    "4hop2__161602_426860_88460_20988",
+    "2hop__153573_109006",
+    "2hop__135963_486257",
+    "2hop__107548_124896"
+  ],
+  "runs": {
+    "deepseek/hipporag": {
+      "result_path": "runs/musique-hipporag-4484a5d6cdac/result.json",
+      "config": {
+        "llm": "deepseek-flash",
+        "base_url": "https://api.deepseek.com",
+        "embedding": "BAAI/bge-small-en-v1.5",
+        "thinking": "disabled",
+        "backend": "deepseek",
+        "method": "hipporag",
+        "dataset": "musique",
+        "question_limit": null,
+        "per_query": true,
+        "source_commit": "d5c8329422e0a0b834a15874545cb6a74b4f9b26",
+        "corpus_sha256": "ff6ff39d3ae9d666d12bd5bbf526ca50462f4957de7d0965974906dc3c8429a3",
+        "questions_sha256": "043b9ac418d0360bd90e62685786c8b1a7c1190322ca7e06b8baa87169315da4",
+        "embedding_snapshot": {
+          "model_id": "BAAI/bge-small-en-v1.5",
+          "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "device": "cpu",
+          "shape": [
+            2,
+            384
+          ],
+          "finite_and_normalized": true,
+          "weight_sha256": {
+            "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+          }
+        }
+      },
+      "retrieval": {
+        "Recall@1": 0.3716579999999999,
+        "Recall@2": 0.6816699999999999,
+        "Recall@5": 0.8616699999999998,
+        "Recall@10": 0.968334,
+        "Recall@20": 0.98,
+        "Recall@30": 0.99,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa": {
+        "ExactMatch": 0.52,
+        "F1": 0.610542
+      },
+      "indexing_seconds": 378.16188904199953,
+      "query_seconds_mean": 2.1529501449607777,
+      "queries_with_graph_seeds": 49,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "cached_response_usage": {
+        "requests": 554,
+        "prompt_tokens": 418957,
+        "completion_tokens": 80236,
+        "total_tokens": 499193,
+        "cached_tokens": 224383
+      },
+      "length_terminated_responses": 0,
+      "complete_support_at_5": 32,
+      "complete_support_at_5_but_f1_zero": 6,
+      "answers_over_20_words": 0,
+      "raw_cache_reuse": null
+    },
+    "deepseek/standard": {
+      "result_path": "runs/musique-standard-983e4dddd3dd/result.json",
+      "config": {
+        "llm": "deepseek-flash",
+        "base_url": "https://api.deepseek.com",
+        "embedding": "BAAI/bge-small-en-v1.5",
+        "thinking": "disabled",
+        "backend": "deepseek",
+        "method": "standard",
+        "dataset": "musique",
+        "question_limit": null,
+        "per_query": true,
+        "source_commit": "d5c8329422e0a0b834a15874545cb6a74b4f9b26",
+        "corpus_sha256": "ff6ff39d3ae9d666d12bd5bbf526ca50462f4957de7d0965974906dc3c8429a3",
+        "questions_sha256": "043b9ac418d0360bd90e62685786c8b1a7c1190322ca7e06b8baa87169315da4",
+        "embedding_snapshot": {
+          "model_id": "BAAI/bge-small-en-v1.5",
+          "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "device": "cpu",
+          "shape": [
+            2,
+            384
+          ],
+          "finite_and_normalized": true,
+          "weight_sha256": {
+            "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+          }
+        }
+      },
+      "retrieval": {
+        "Recall@1": 0.37499199999999994,
+        "Recall@2": 0.5883379999999999,
+        "Recall@5": 0.8000039999999998,
+        "Recall@10": 0.8650019999999999,
+        "Recall@20": 0.915,
+        "Recall@30": 0.946668,
+        "Recall@50": 0.9783339999999999,
+        "Recall@100": 0.99,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa": {
+        "ExactMatch": 0.5,
+        "F1": 0.635168
+      },
+      "indexing_seconds": 5.202775541001756,
+      "query_seconds_mean": 1.4240332099796797,
+      "queries_with_graph_seeds": null,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "cached_response_usage": {
+        "requests": 50,
+        "prompt_tokens": 67166,
+        "completion_tokens": 5619,
+        "total_tokens": 72785,
+        "cached_tokens": 31488
+      },
+      "length_terminated_responses": 1,
+      "complete_support_at_5": 24,
+      "complete_support_at_5_but_f1_zero": 2,
+      "answers_over_20_words": 1,
+      "raw_cache_reuse": null
+    },
+    "local/hipporag": {
+      "result_path": "runs/musique-hipporag-919e8c07ccb6/result.json",
+      "config": {
+        "llm": "default_model",
+        "model_id": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+        "base_url": "http://127.0.0.1:8080/v1",
+        "embedding": "BAAI/bge-small-en-v1.5",
+        "backend": "local",
+        "method": "hipporag",
+        "dataset": "musique",
+        "question_limit": null,
+        "per_query": true,
+        "source_commit": "d5c8329422e0a0b834a15874545cb6a74b4f9b26",
+        "corpus_sha256": "ff6ff39d3ae9d666d12bd5bbf526ca50462f4957de7d0965974906dc3c8429a3",
+        "questions_sha256": "043b9ac418d0360bd90e62685786c8b1a7c1190322ca7e06b8baa87169315da4",
+        "local_adapter": {
+          "version": "strict-json-v3",
+          "sha256": "5f9e470147ecec4ff5ca75938ef21e742b9ae415bc8bba3070a01c33bfbae4b7",
+          "repetition_penalty": 1.1,
+          "repetition_context_size": 256
+        },
+        "embedding_snapshot": {
+          "model_id": "BAAI/bge-small-en-v1.5",
+          "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "device": "cpu",
+          "shape": [
+            2,
+            384
+          ],
+          "finite_and_normalized": true,
+          "weight_sha256": {
+            "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+          }
+        },
+        "local_model_snapshot": {
+          "model_id": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+          "revision": "8b403126fc14f14cfc99bb4cfa72ecbc129ea677",
+          "weights_sha256": {
+            "model.safetensors": "0979f33d1bc58afcf696d13f57977644e7b11a6f0eec3e631d8e9463d18c0717"
+          }
+        }
+      },
+      "retrieval": {
+        "Recall@1": 0.31166,
+        "Recall@2": 0.523334,
+        "Recall@5": 0.81167,
+        "Recall@10": 0.9000020000000001,
+        "Recall@20": 0.9300020000000001,
+        "Recall@30": 0.960002,
+        "Recall@50": 0.985,
+        "Recall@100": 0.99,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa": {
+        "ExactMatch": 0.06,
+        "F1": 0.14075199999999996
+      },
+      "indexing_seconds": 415.7288392499977,
+      "query_seconds_mean": 2.5010772258992073,
+      "queries_with_graph_seeds": 42,
+      "response_models": [
+        "default_model"
+      ],
+      "cached_response_usage": {
+        "requests": 557,
+        "prompt_tokens": 449661,
+        "completion_tokens": 51987,
+        "total_tokens": 501648,
+        "cached_tokens": 311529
+      },
+      "length_terminated_responses": 4,
+      "complete_support_at_5": 28,
+      "complete_support_at_5_but_f1_zero": 15,
+      "answers_over_20_words": 19,
+      "raw_cache_reuse": {
+        "source": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/runs/musique-hipporag-2d9569a5f35b/index/llm_cache/default_model_cache.sqlite",
+        "sha256": "c89bdfa7e89d4eead13f73ca2e5cef5766b0c170e614a8943a5965b23994e1de"
+      }
+    },
+    "local/standard": {
+      "result_path": "runs/musique-standard-2fa2fe6c41f1/result.json",
+      "config": {
+        "llm": "default_model",
+        "model_id": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+        "base_url": "http://127.0.0.1:8080/v1",
+        "embedding": "BAAI/bge-small-en-v1.5",
+        "backend": "local",
+        "method": "standard",
+        "dataset": "musique",
+        "question_limit": null,
+        "per_query": true,
+        "source_commit": "d5c8329422e0a0b834a15874545cb6a74b4f9b26",
+        "corpus_sha256": "ff6ff39d3ae9d666d12bd5bbf526ca50462f4957de7d0965974906dc3c8429a3",
+        "questions_sha256": "043b9ac418d0360bd90e62685786c8b1a7c1190322ca7e06b8baa87169315da4",
+        "local_adapter": {
+          "version": "strict-json-v3",
+          "sha256": "5f9e470147ecec4ff5ca75938ef21e742b9ae415bc8bba3070a01c33bfbae4b7",
+          "repetition_penalty": 1.1,
+          "repetition_context_size": 256
+        },
+        "embedding_snapshot": {
+          "model_id": "BAAI/bge-small-en-v1.5",
+          "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "snapshot_path": "/Users/mingyue/Documents/Codex/2026-10-14/za/outputs/idea1-study/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+          "device": "cpu",
+          "shape": [
+            2,
+            384
+          ],
+          "finite_and_normalized": true,
+          "weight_sha256": {
+            "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+          }
+        },
+        "local_model_snapshot": {
+          "model_id": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+          "revision": "8b403126fc14f14cfc99bb4cfa72ecbc129ea677",
+          "weights_sha256": {
+            "model.safetensors": "0979f33d1bc58afcf696d13f57977644e7b11a6f0eec3e631d8e9463d18c0717"
+          }
+        }
+      },
+      "retrieval": {
+        "Recall@1": 0.37499199999999994,
+        "Recall@2": 0.5883379999999999,
+        "Recall@5": 0.8000039999999998,
+        "Recall@10": 0.8650019999999999,
+        "Recall@20": 0.915,
+        "Recall@30": 0.946668,
+        "Recall@50": 0.9783339999999999,
+        "Recall@100": 0.99,
+        "Recall@150": 1.0,
+        "Recall@200": 1.0
+      },
+      "qa": {
+        "ExactMatch": 0.06,
+        "F1": 0.17362800000000003
+      },
+      "indexing_seconds": 4.741048542004137,
+      "query_seconds_mean": 1.0100576325600559,
+      "queries_with_graph_seeds": null,
+      "response_models": [
+        "default_model"
+      ],
+      "cached_response_usage": {
+        "requests": 50,
+        "prompt_tokens": 72552,
+        "completion_tokens": 4052,
+        "total_tokens": 76604,
+        "cached_tokens": 36855
+      },
+      "length_terminated_responses": 0,
+      "complete_support_at_5": 24,
+      "complete_support_at_5_but_f1_zero": 10,
+      "answers_over_20_words": 20,
+      "raw_cache_reuse": null
+    }
+  },
+  "paired_differences": {
+    "local": {
+      "hipporag_minus_dense_f1": -0.032876,
+      "bootstrap_95_percentile": [
+        -0.110492,
+        0.043190000000000006
+      ],
+      "resamples": 5000,
+      "seed": 20261017
+    },
+    "deepseek": {
+      "hipporag_minus_dense_f1": -0.024626,
+      "bootstrap_95_percentile": [
+        -0.131466,
+        0.09002800000000001
+      ],
+      "resamples": 5000,
+      "seed": 20261017
+    }
+  }
+}
